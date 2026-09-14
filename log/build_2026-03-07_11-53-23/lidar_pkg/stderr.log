@@ -1,0 +1,14 @@
+[01m[K/home/xc/桌面/roscar_nav/src/lidar_pkg_ros2-main/src/lidar_node.cpp:[m[K In constructor ‘[01m[KLidarNode::LidarNode()[m[K’:
+[01m[K/home/xc/桌面/roscar_nav/src/lidar_pkg_ros2-main/src/lidar_node.cpp:155:12:[m[K [01;35m[Kwarning: [m[K‘[01m[KLidarNode::last_point_angle_[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+  155 |     double [01;35m[Klast_point_angle_[m[K;
+      |            [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/xc/桌面/roscar_nav/src/lidar_pkg_ros2-main/src/lidar_node.cpp:130:9:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kint LidarNode::scan_count_[m[K’ [[01;35m[K-Wreorder[m[K]
+  130 |     int [01;35m[Kscan_count_[m[K = 0;
+      |         [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/xc/桌面/roscar_nav/src/lidar_pkg_ros2-main/src/lidar_node.cpp:34:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+   34 |     [01;35m[KLidarNode[m[K()
+      |     [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/xc/桌面/roscar_nav/src/lidar_pkg_ros2-main/src/lidar_node.cpp:[m[K In member function ‘[01m[Kvoid LidarNode::publishScan()[m[K’:
+[01m[K/home/xc/桌面/roscar_nav/src/lidar_pkg_ros2-main/src/lidar_node.cpp:444:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kraw_size[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  444 |             size_t [01;35m[Kraw_size[m[K = full_scan_buffer_.size();
+      |                    [01;35m[K^~~~~~~~[m[K

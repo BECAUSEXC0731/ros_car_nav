@@ -1,0 +1,17 @@
+/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg//launch/slam.launch.py
+/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg//launch/slam_robot.launch.py
+/home/xc/桌面/roscar_nav/install/slam_pkg/share/ament_index/resource_index/package_run_dependencies/slam_pkg
+/home/xc/桌面/roscar_nav/install/slam_pkg/share/ament_index/resource_index/parent_prefix_path/slam_pkg
+/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/environment/ament_prefix_path.sh
+/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/environment/ament_prefix_path.dsv
+/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/environment/path.sh
+/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/environment/path.dsv
+/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/local_setup.bash
+/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/local_setup.sh
+/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/local_setup.zsh
+/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/local_setup.dsv
+/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/package.dsv
+/home/xc/桌面/roscar_nav/install/slam_pkg/share/ament_index/resource_index/packages/slam_pkg
+/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/cmake/slam_pkgConfig.cmake
+/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/cmake/slam_pkgConfig-version.cmake
+/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/package.xml

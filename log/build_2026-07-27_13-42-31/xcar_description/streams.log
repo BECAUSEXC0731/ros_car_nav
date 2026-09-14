@@ -1,0 +1,26 @@
+[0.055s] Invoking command in '/home/xc/桌面/roscar_nav/build/xcar_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/xcar_description -- -j4 -l4
+[0.257s] Invoked command in '/home/xc/桌面/roscar_nav/build/xcar_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/xcar_description -- -j4 -l4
+[0.314s] Invoking command in '/home/xc/桌面/roscar_nav/build/xcar_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/xcar_description
+[0.344s] -- Install configuration: ""
+[0.346s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/xcar_description/share/xcar_description/urdf
+[0.346s] -- Installing: /home/xc/桌面/roscar_nav/install/xcar_description/share/xcar_description/urdf/xcar.urdf
+[0.348s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/xcar_description/share/xcar_description/launch
+[0.349s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/xcar_description/share/xcar_description/launch/display.launch.py
+[0.352s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/xcar_description/share/xcar_description/rviz
+[0.353s] -- Installing: /home/xc/桌面/roscar_nav/install/xcar_description/share/xcar_description/rviz/display.rviz
+[0.356s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/xcar_description/share/ament_index/resource_index/package_run_dependencies/xcar_description
+[0.356s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/xcar_description/share/ament_index/resource_index/parent_prefix_path/xcar_description
+[0.358s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/xcar_description/share/xcar_description/environment/ament_prefix_path.sh
+[0.359s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/xcar_description/share/xcar_description/environment/ament_prefix_path.dsv
+[0.360s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/xcar_description/share/xcar_description/environment/path.sh
+[0.361s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/xcar_description/share/xcar_description/environment/path.dsv
+[0.361s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/xcar_description/share/xcar_description/local_setup.bash
+[0.362s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/xcar_description/share/xcar_description/local_setup.sh
+[0.363s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/xcar_description/share/xcar_description/local_setup.zsh
+[0.363s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/xcar_description/share/xcar_description/local_setup.dsv
+[0.364s] -- Installing: /home/xc/桌面/roscar_nav/install/xcar_description/share/xcar_description/package.dsv
+[0.367s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/xcar_description/share/ament_index/resource_index/packages/xcar_description
+[0.368s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/xcar_description/share/xcar_description/cmake/xcar_descriptionConfig.cmake
+[0.369s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/xcar_description/share/xcar_description/cmake/xcar_descriptionConfig-version.cmake
+[0.370s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/xcar_description/share/xcar_description/package.xml
+[0.384s] Invoked command in '/home/xc/桌面/roscar_nav/build/xcar_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/xcar_description

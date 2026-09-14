@@ -1,0 +1,4 @@
+source;share/xcar_description/local_setup.bash
+source;share/xcar_description/local_setup.dsv
+source;share/xcar_description/local_setup.sh
+source;share/xcar_description/local_setup.zsh

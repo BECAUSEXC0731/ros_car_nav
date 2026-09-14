@@ -1,0 +1,9 @@
+/home/xc/桌面/roscar_nav/build/xcar_description/CMakeFiles/uninstall.dir
+/home/xc/桌面/roscar_nav/build/xcar_description/CMakeFiles/xcar_description_uninstall.dir
+/home/xc/桌面/roscar_nav/build/xcar_description/CMakeFiles/test.dir
+/home/xc/桌面/roscar_nav/build/xcar_description/CMakeFiles/edit_cache.dir
+/home/xc/桌面/roscar_nav/build/xcar_description/CMakeFiles/rebuild_cache.dir
+/home/xc/桌面/roscar_nav/build/xcar_description/CMakeFiles/list_install_components.dir
+/home/xc/桌面/roscar_nav/build/xcar_description/CMakeFiles/install.dir
+/home/xc/桌面/roscar_nav/build/xcar_description/CMakeFiles/install/local.dir
+/home/xc/桌面/roscar_nav/build/xcar_description/CMakeFiles/install/strip.dir

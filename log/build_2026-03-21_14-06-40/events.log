@@ -1,0 +1,567 @@
+[0.000000] (-) TimerEvent: {}
+[0.001921] (fishbot_bringup) JobQueued: {'identifier': 'fishbot_bringup', 'dependencies': OrderedDict()}
+[0.002559] (fishbot_description) JobQueued: {'identifier': 'fishbot_description', 'dependencies': OrderedDict()}
+[0.003352] (lidar_pkg) JobQueued: {'identifier': 'lidar_pkg', 'dependencies': OrderedDict()}
+[0.003603] (slam_pkg) JobQueued: {'identifier': 'slam_pkg', 'dependencies': OrderedDict()}
+[0.003794] (fishbot_bringup) JobStarted: {'identifier': 'fishbot_bringup'}
+[0.098946] (fishbot_description) JobStarted: {'identifier': 'fishbot_description'}
+[0.101674] (-) TimerEvent: {}
+[0.193517] (lidar_pkg) JobStarted: {'identifier': 'lidar_pkg'}
+[0.203217] (-) TimerEvent: {}
+[0.290338] (slam_pkg) JobStarted: {'identifier': 'slam_pkg'}
+[0.303368] (-) TimerEvent: {}
+[0.387937] (fishbot_bringup) JobProgress: {'identifier': 'fishbot_bringup', 'progress': 'cmake'}
+[0.403649] (-) TimerEvent: {}
+[0.465909] (fishbot_bringup) JobProgress: {'identifier': 'fishbot_bringup', 'progress': 'build'}
+[0.471411] (fishbot_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xc/桌面/roscar_nav/build/fishbot_bringup', '--', '-j4', '-l4'], 'cwd': '/home/xc/桌面/roscar_nav/build/fishbot_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'xc'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/xc'), ('OLDPWD', '/home/xc/桌面'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1348'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'xc'), ('DESKTOP_AUTOSTART_ID', '10a23f54a7a83c37b5177367776037011200000013480016'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/xc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/xc-pi:@/tmp/.ICE-unix/1348,unix/xc-pi:/tmp/.ICE-unix/1348'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8d01d455_f9a2_4d61_9f63_bc54278eb58a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xc/桌面/roscar_nav/build/fishbot_bringup'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.503881] (-) TimerEvent: {}
+[0.557126] (fishbot_description) JobProgress: {'identifier': 'fishbot_description', 'progress': 'cmake'}
+[0.561660] (fishbot_description) JobProgress: {'identifier': 'fishbot_description', 'progress': 'build'}
+[0.563081] (fishbot_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xc/桌面/roscar_nav/build/fishbot_description', '--', '-j4', '-l4'], 'cwd': '/home/xc/桌面/roscar_nav/build/fishbot_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'xc'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/xc'), ('OLDPWD', '/home/xc/桌面'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1348'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'xc'), ('DESKTOP_AUTOSTART_ID', '10a23f54a7a83c37b5177367776037011200000013480016'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/xc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/xc-pi:@/tmp/.ICE-unix/1348,unix/xc-pi:/tmp/.ICE-unix/1348'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8d01d455_f9a2_4d61_9f63_bc54278eb58a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xc/桌面/roscar_nav/build/fishbot_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.573998] (lidar_pkg) JobProgress: {'identifier': 'lidar_pkg', 'progress': 'cmake'}
+[0.578976] (lidar_pkg) JobProgress: {'identifier': 'lidar_pkg', 'progress': 'build'}
+[0.583700] (lidar_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xc/桌面/roscar_nav/build/lidar_pkg', '--', '-j4', '-l4'], 'cwd': '/home/xc/桌面/roscar_nav/build/lidar_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'xc'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/xc'), ('OLDPWD', '/home/xc/桌面'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1348'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'xc'), ('DESKTOP_AUTOSTART_ID', '10a23f54a7a83c37b5177367776037011200000013480016'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/xc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/xc-pi:@/tmp/.ICE-unix/1348,unix/xc-pi:/tmp/.ICE-unix/1348'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8d01d455_f9a2_4d61_9f63_bc54278eb58a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xc/桌面/roscar_nav/build/lidar_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.605199] (-) TimerEvent: {}
+[0.652230] (slam_pkg) JobProgress: {'identifier': 'slam_pkg', 'progress': 'cmake'}
+[0.655602] (slam_pkg) JobProgress: {'identifier': 'slam_pkg', 'progress': 'build'}
+[0.661119] (slam_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xc/桌面/roscar_nav/build/slam_pkg', '--', '-j4', '-l4'], 'cwd': '/home/xc/桌面/roscar_nav/build/slam_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'xc'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/xc'), ('OLDPWD', '/home/xc/桌面'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1348'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'xc'), ('DESKTOP_AUTOSTART_ID', '10a23f54a7a83c37b5177367776037011200000013480016'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/xc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/xc-pi:@/tmp/.ICE-unix/1348,unix/xc-pi:/tmp/.ICE-unix/1348'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8d01d455_f9a2_4d61_9f63_bc54278eb58a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xc/桌面/roscar_nav/build/slam_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.701634] (fishbot_bringup) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target odom2tf\x1b[0m\n'}
+[0.705480] (-) TimerEvent: {}
+[0.783638] (fishbot_description) CommandEnded: {'returncode': 0}
+[0.792550] (fishbot_description) JobProgress: {'identifier': 'fishbot_description', 'progress': 'install'}
+[0.805792] (-) TimerEvent: {}
+[0.835059] (fishbot_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xc/桌面/roscar_nav/build/fishbot_description'], 'cwd': '/home/xc/桌面/roscar_nav/build/fishbot_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'xc'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/xc'), ('OLDPWD', '/home/xc/桌面'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1348'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'xc'), ('DESKTOP_AUTOSTART_ID', '10a23f54a7a83c37b5177367776037011200000013480016'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/xc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/xc-pi:@/tmp/.ICE-unix/1348,unix/xc-pi:/tmp/.ICE-unix/1348'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8d01d455_f9a2_4d61_9f63_bc54278eb58a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xc/桌面/roscar_nav/build/fishbot_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.871125] (slam_pkg) CommandEnded: {'returncode': 0}
+[0.883096] (slam_pkg) JobProgress: {'identifier': 'slam_pkg', 'progress': 'install'}
+[0.883461] (slam_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xc/桌面/roscar_nav/build/slam_pkg'], 'cwd': '/home/xc/桌面/roscar_nav/build/slam_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'xc'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/xc'), ('OLDPWD', '/home/xc/桌面'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1348'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'xc'), ('DESKTOP_AUTOSTART_ID', '10a23f54a7a83c37b5177367776037011200000013480016'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/xc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/xc-pi:@/tmp/.ICE-unix/1348,unix/xc-pi:/tmp/.ICE-unix/1348'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8d01d455_f9a2_4d61_9f63_bc54278eb58a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xc/桌面/roscar_nav/build/slam_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.886615] (fishbot_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.888958] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/urdf\n'}
+[0.892692] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/urdf/fishbot.urdf\n'}
+[0.893779] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/ament_index/resource_index/package_run_dependencies/fishbot_description\n'}
+[0.894693] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/ament_index/resource_index/parent_prefix_path/fishbot_description\n'}
+[0.896380] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/environment/ament_prefix_path.sh\n'}
+[0.912543] (-) TimerEvent: {}
+[0.913357] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/environment/ament_prefix_path.dsv\n'}
+[0.914329] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/environment/path.sh\n'}
+[0.915136] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/environment/path.dsv\n'}
+[0.915616] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/local_setup.bash\n'}
+[0.916100] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/local_setup.sh\n'}
+[0.925677] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/local_setup.zsh\n'}
+[0.926576] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/local_setup.dsv\n'}
+[0.927184] (fishbot_description) StdoutLine: {'line': b'-- Installing: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/package.dsv\n'}
+[0.927761] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/ament_index/resource_index/packages/fishbot_description\n'}
+[0.928783] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/cmake/fishbot_descriptionConfig.cmake\n'}
+[0.941456] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/cmake/fishbot_descriptionConfig-version.cmake\n'}
+[0.942372] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/package.xml\n'}
+[0.943238] (fishbot_bringup) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/odom2tf.dir/src/odom2tf.cpp.o\x1b[0m\n'}
+[0.944198] (fishbot_description) CommandEnded: {'returncode': 0}
+[0.947385] (lidar_pkg) StdoutLine: {'line': b'[100%] Built target lidar_node\n'}
+[0.949366] (slam_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.965191] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg//launch\n'}
+[0.966428] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg//launch/slam.launch.py\n'}
+[0.967660] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg//launch/slam_robot.launch.py\n'}
+[0.968332] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg//launch/slam_pc.launch.py\n'}
+[0.969233] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/ament_index/resource_index/package_run_dependencies/slam_pkg\n'}
+[0.969778] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/ament_index/resource_index/parent_prefix_path/slam_pkg\n'}
+[0.970343] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg/environment/ament_prefix_path.sh\n'}
+[0.970963] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg/environment/ament_prefix_path.dsv\n'}
+[0.971657] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg/environment/path.sh\n'}
+[0.972452] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg/environment/path.dsv\n'}
+[0.973240] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg/local_setup.bash\n'}
+[0.978371] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg/local_setup.sh\n'}
+[0.980166] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg/local_setup.zsh\n'}
+[0.981830] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg/local_setup.dsv\n'}
+[0.983838] (slam_pkg) StdoutLine: {'line': b'-- Installing: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg/package.dsv\n'}
+[0.984697] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/ament_index/resource_index/packages/slam_pkg\n'}
+[0.985167] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg/cmake/slam_pkgConfig.cmake\n'}
+[0.985563] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg/cmake/slam_pkgConfig-version.cmake\n'}
+[0.985962] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg/package.xml\n'}
+[1.012837] (-) TimerEvent: {}
+[1.113889] (-) TimerEvent: {}
+[1.214721] (-) TimerEvent: {}
+[1.222006] (fishbot_description) JobEnded: {'identifier': 'fishbot_description', 'rc': 0}
+[1.322668] (-) TimerEvent: {}
+[1.323229] (slam_pkg) CommandEnded: {'returncode': 0}
+[1.424004] (-) TimerEvent: {}
+[1.526569] (-) TimerEvent: {}
+[1.627342] (-) TimerEvent: {}
+[1.655871] (slam_pkg) JobEnded: {'identifier': 'slam_pkg', 'rc': 0}
+[1.661231] (lidar_pkg) CommandEnded: {'returncode': 0}
+[1.670225] (lidar_pkg) JobProgress: {'identifier': 'lidar_pkg', 'progress': 'install'}
+[1.670456] (lidar_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xc/桌面/roscar_nav/build/lidar_pkg'], 'cwd': '/home/xc/桌面/roscar_nav/build/lidar_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'xc'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/xc'), ('OLDPWD', '/home/xc/桌面'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1348'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'xc'), ('DESKTOP_AUTOSTART_ID', '10a23f54a7a83c37b5177367776037011200000013480016'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/xc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/xc-pi:@/tmp/.ICE-unix/1348,unix/xc-pi:/tmp/.ICE-unix/1348'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8d01d455_f9a2_4d61_9f63_bc54278eb58a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xc/桌面/roscar_nav/build/lidar_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.701995] (lidar_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.703497] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/lib/lidar_pkg/lidar_node\n'}
+[1.704862] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/launch\n'}
+[1.705763] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/launch/monitor.launch.py\n'}
+[1.706430] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/launch/lidar.launch.py\n'}
+[1.708376] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/urdf\n'}
+[1.709134] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/urdf/lidar.urdf\n'}
+[1.709623] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/rviz\n'}
+[1.710717] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/rviz/lidar.rviz\n'}
+[1.711270] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/config\n'}
+[1.711777] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/config/lidar_params.yaml\n'}
+[1.712573] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/ament_index/resource_index/package_run_dependencies/lidar_pkg\n'}
+[1.713009] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/ament_index/resource_index/parent_prefix_path/lidar_pkg\n'}
+[1.713414] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/environment/ament_prefix_path.sh\n'}
+[1.714398] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/environment/ament_prefix_path.dsv\n'}
+[1.715118] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/environment/path.sh\n'}
+[1.715492] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/environment/path.dsv\n'}
+[1.715823] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/local_setup.bash\n'}
+[1.716153] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/local_setup.sh\n'}
+[1.716517] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/local_setup.zsh\n'}
+[1.716848] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/local_setup.dsv\n'}
+[1.717196] (lidar_pkg) StdoutLine: {'line': b'-- Installing: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/package.dsv\n'}
+[1.717503] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/ament_index/resource_index/packages/lidar_pkg\n'}
+[1.717819] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/cmake/lidar_pkgConfig.cmake\n'}
+[1.718127] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/cmake/lidar_pkgConfig-version.cmake\n'}
+[1.718429] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/package.xml\n'}
+[1.727507] (-) TimerEvent: {}
+[1.749052] (lidar_pkg) CommandEnded: {'returncode': 0}
+[1.828893] (-) TimerEvent: {}
+[1.931100] (-) TimerEvent: {}
+[2.031902] (-) TimerEvent: {}
+[2.132759] (-) TimerEvent: {}
+[2.153057] (lidar_pkg) JobEnded: {'identifier': 'lidar_pkg', 'rc': 0}
+[2.232937] (-) TimerEvent: {}
+[2.333709] (-) TimerEvent: {}
+[2.434516] (-) TimerEvent: {}
+[2.535308] (-) TimerEvent: {}
+[2.636114] (-) TimerEvent: {}
+[2.737060] (-) TimerEvent: {}
+[2.837887] (-) TimerEvent: {}
+[2.938798] (-) TimerEvent: {}
+[3.039653] (-) TimerEvent: {}
+[3.140617] (-) TimerEvent: {}
+[3.241557] (-) TimerEvent: {}
+[3.342397] (-) TimerEvent: {}
+[3.443331] (-) TimerEvent: {}
+[3.544175] (-) TimerEvent: {}
+[3.645290] (-) TimerEvent: {}
+[3.746200] (-) TimerEvent: {}
+[3.847296] (-) TimerEvent: {}
+[3.948292] (-) TimerEvent: {}
+[4.049254] (-) TimerEvent: {}
+[4.150159] (-) TimerEvent: {}
+[4.251030] (-) TimerEvent: {}
+[4.351922] (-) TimerEvent: {}
+[4.452843] (-) TimerEvent: {}
+[4.553720] (-) TimerEvent: {}
+[4.654594] (-) TimerEvent: {}
+[4.755706] (-) TimerEvent: {}
+[4.856917] (-) TimerEvent: {}
+[4.957770] (-) TimerEvent: {}
+[5.058705] (-) TimerEvent: {}
+[5.159639] (-) TimerEvent: {}
+[5.260661] (-) TimerEvent: {}
+[5.361554] (-) TimerEvent: {}
+[5.462420] (-) TimerEvent: {}
+[5.563561] (-) TimerEvent: {}
+[5.664568] (-) TimerEvent: {}
+[5.765527] (-) TimerEvent: {}
+[5.866574] (-) TimerEvent: {}
+[5.967519] (-) TimerEvent: {}
+[6.068494] (-) TimerEvent: {}
+[6.169501] (-) TimerEvent: {}
+[6.270474] (-) TimerEvent: {}
+[6.371382] (-) TimerEvent: {}
+[6.472266] (-) TimerEvent: {}
+[6.573195] (-) TimerEvent: {}
+[6.674595] (-) TimerEvent: {}
+[6.777456] (-) TimerEvent: {}
+[6.878748] (-) TimerEvent: {}
+[6.981029] (-) TimerEvent: {}
+[7.083765] (-) TimerEvent: {}
+[7.190664] (-) TimerEvent: {}
+[7.293174] (-) TimerEvent: {}
+[7.394841] (-) TimerEvent: {}
+[7.497202] (-) TimerEvent: {}
+[7.599177] (-) TimerEvent: {}
+[7.701739] (-) TimerEvent: {}
+[7.802902] (-) TimerEvent: {}
+[7.905108] (-) TimerEvent: {}
+[8.007027] (-) TimerEvent: {}
+[8.108592] (-) TimerEvent: {}
+[8.211204] (-) TimerEvent: {}
+[8.312862] (-) TimerEvent: {}
+[8.413814] (-) TimerEvent: {}
+[8.514876] (-) TimerEvent: {}
+[8.616307] (-) TimerEvent: {}
+[8.717247] (-) TimerEvent: {}
+[8.818233] (-) TimerEvent: {}
+[8.919214] (-) TimerEvent: {}
+[9.020139] (-) TimerEvent: {}
+[9.121163] (-) TimerEvent: {}
+[9.222023] (-) TimerEvent: {}
+[9.322937] (-) TimerEvent: {}
+[9.423984] (-) TimerEvent: {}
+[9.525165] (-) TimerEvent: {}
+[9.673762] (-) TimerEvent: {}
+[9.774650] (-) TimerEvent: {}
+[9.875637] (-) TimerEvent: {}
+[9.976537] (-) TimerEvent: {}
+[10.077478] (-) TimerEvent: {}
+[10.178457] (-) TimerEvent: {}
+[10.279355] (-) TimerEvent: {}
+[10.380272] (-) TimerEvent: {}
+[10.481295] (-) TimerEvent: {}
+[10.582156] (-) TimerEvent: {}
+[10.683136] (-) TimerEvent: {}
+[10.784064] (-) TimerEvent: {}
+[10.885049] (-) TimerEvent: {}
+[10.986013] (-) TimerEvent: {}
+[11.086909] (-) TimerEvent: {}
+[11.187846] (-) TimerEvent: {}
+[11.288830] (-) TimerEvent: {}
+[11.389749] (-) TimerEvent: {}
+[11.490749] (-) TimerEvent: {}
+[11.591888] (-) TimerEvent: {}
+[11.693089] (-) TimerEvent: {}
+[11.793996] (-) TimerEvent: {}
+[11.894893] (-) TimerEvent: {}
+[11.995814] (-) TimerEvent: {}
+[12.096685] (-) TimerEvent: {}
+[12.197540] (-) TimerEvent: {}
+[12.298499] (-) TimerEvent: {}
+[12.399402] (-) TimerEvent: {}
+[12.500256] (-) TimerEvent: {}
+[12.601168] (-) TimerEvent: {}
+[12.702035] (-) TimerEvent: {}
+[12.802983] (-) TimerEvent: {}
+[12.903889] (-) TimerEvent: {}
+[13.004964] (-) TimerEvent: {}
+[13.106106] (-) TimerEvent: {}
+[13.207250] (-) TimerEvent: {}
+[13.308276] (-) TimerEvent: {}
+[13.409259] (-) TimerEvent: {}
+[13.510171] (-) TimerEvent: {}
+[13.611115] (-) TimerEvent: {}
+[13.712139] (-) TimerEvent: {}
+[13.813389] (-) TimerEvent: {}
+[13.915351] (-) TimerEvent: {}
+[14.016328] (-) TimerEvent: {}
+[14.117234] (-) TimerEvent: {}
+[14.218131] (-) TimerEvent: {}
+[14.318998] (-) TimerEvent: {}
+[14.419894] (-) TimerEvent: {}
+[14.520854] (-) TimerEvent: {}
+[14.621712] (-) TimerEvent: {}
+[14.722768] (-) TimerEvent: {}
+[14.823630] (-) TimerEvent: {}
+[14.924538] (-) TimerEvent: {}
+[15.025391] (-) TimerEvent: {}
+[15.126253] (-) TimerEvent: {}
+[15.227101] (-) TimerEvent: {}
+[15.328014] (-) TimerEvent: {}
+[15.428909] (-) TimerEvent: {}
+[15.530450] (-) TimerEvent: {}
+[15.631377] (-) TimerEvent: {}
+[15.732247] (-) TimerEvent: {}
+[15.833156] (-) TimerEvent: {}
+[15.934070] (-) TimerEvent: {}
+[16.035041] (-) TimerEvent: {}
+[16.136121] (-) TimerEvent: {}
+[16.236993] (-) TimerEvent: {}
+[16.338052] (-) TimerEvent: {}
+[16.438964] (-) TimerEvent: {}
+[16.540019] (-) TimerEvent: {}
+[16.641246] (-) TimerEvent: {}
+[16.743211] (-) TimerEvent: {}
+[16.844201] (-) TimerEvent: {}
+[16.945156] (-) TimerEvent: {}
+[17.046037] (-) TimerEvent: {}
+[17.146987] (-) TimerEvent: {}
+[17.247948] (-) TimerEvent: {}
+[17.349125] (-) TimerEvent: {}
+[17.449987] (-) TimerEvent: {}
+[17.550938] (-) TimerEvent: {}
+[17.651849] (-) TimerEvent: {}
+[17.752705] (-) TimerEvent: {}
+[17.853549] (-) TimerEvent: {}
+[17.954465] (-) TimerEvent: {}
+[18.055394] (-) TimerEvent: {}
+[18.156308] (-) TimerEvent: {}
+[18.257201] (-) TimerEvent: {}
+[18.358136] (-) TimerEvent: {}
+[18.459113] (-) TimerEvent: {}
+[18.560017] (-) TimerEvent: {}
+[18.660905] (-) TimerEvent: {}
+[18.761871] (-) TimerEvent: {}
+[18.862804] (-) TimerEvent: {}
+[18.963788] (-) TimerEvent: {}
+[19.064643] (-) TimerEvent: {}
+[19.165603] (-) TimerEvent: {}
+[19.266520] (-) TimerEvent: {}
+[19.367447] (-) TimerEvent: {}
+[19.468360] (-) TimerEvent: {}
+[19.569450] (-) TimerEvent: {}
+[19.670408] (-) TimerEvent: {}
+[19.771398] (-) TimerEvent: {}
+[19.872311] (-) TimerEvent: {}
+[19.973211] (-) TimerEvent: {}
+[20.074140] (-) TimerEvent: {}
+[20.175019] (-) TimerEvent: {}
+[20.275893] (-) TimerEvent: {}
+[20.376836] (-) TimerEvent: {}
+[20.477704] (-) TimerEvent: {}
+[20.578610] (-) TimerEvent: {}
+[20.679464] (-) TimerEvent: {}
+[20.780475] (-) TimerEvent: {}
+[20.881315] (-) TimerEvent: {}
+[20.982197] (-) TimerEvent: {}
+[21.083101] (-) TimerEvent: {}
+[21.184063] (-) TimerEvent: {}
+[21.284984] (-) TimerEvent: {}
+[21.385951] (-) TimerEvent: {}
+[21.486804] (-) TimerEvent: {}
+[21.587839] (-) TimerEvent: {}
+[21.689184] (-) TimerEvent: {}
+[21.790523] (-) TimerEvent: {}
+[21.891992] (-) TimerEvent: {}
+[21.994347] (-) TimerEvent: {}
+[22.095872] (-) TimerEvent: {}
+[22.197655] (-) TimerEvent: {}
+[22.299601] (-) TimerEvent: {}
+[22.400824] (-) TimerEvent: {}
+[22.503082] (-) TimerEvent: {}
+[22.604195] (-) TimerEvent: {}
+[22.705479] (-) TimerEvent: {}
+[22.807341] (-) TimerEvent: {}
+[22.908208] (-) TimerEvent: {}
+[23.009420] (-) TimerEvent: {}
+[23.111209] (-) TimerEvent: {}
+[23.212504] (-) TimerEvent: {}
+[23.313358] (-) TimerEvent: {}
+[23.414314] (-) TimerEvent: {}
+[23.515905] (-) TimerEvent: {}
+[23.618223] (-) TimerEvent: {}
+[23.719112] (-) TimerEvent: {}
+[23.820194] (-) TimerEvent: {}
+[23.921320] (-) TimerEvent: {}
+[24.022575] (-) TimerEvent: {}
+[24.123515] (-) TimerEvent: {}
+[24.224700] (-) TimerEvent: {}
+[24.326528] (-) TimerEvent: {}
+[24.427856] (-) TimerEvent: {}
+[24.529472] (-) TimerEvent: {}
+[24.630394] (-) TimerEvent: {}
+[24.731266] (-) TimerEvent: {}
+[24.832208] (-) TimerEvent: {}
+[24.933059] (-) TimerEvent: {}
+[25.033911] (-) TimerEvent: {}
+[25.134912] (-) TimerEvent: {}
+[25.235884] (-) TimerEvent: {}
+[25.336726] (-) TimerEvent: {}
+[25.437622] (-) TimerEvent: {}
+[25.538494] (-) TimerEvent: {}
+[25.639404] (-) TimerEvent: {}
+[25.740499] (-) TimerEvent: {}
+[25.841278] (-) TimerEvent: {}
+[25.942202] (-) TimerEvent: {}
+[26.043100] (-) TimerEvent: {}
+[26.144023] (-) TimerEvent: {}
+[26.245090] (-) TimerEvent: {}
+[26.346098] (-) TimerEvent: {}
+[26.446925] (-) TimerEvent: {}
+[26.547816] (-) TimerEvent: {}
+[26.648661] (-) TimerEvent: {}
+[26.749717] (-) TimerEvent: {}
+[26.850916] (-) TimerEvent: {}
+[26.952595] (-) TimerEvent: {}
+[27.053379] (-) TimerEvent: {}
+[27.154202] (-) TimerEvent: {}
+[27.255107] (-) TimerEvent: {}
+[27.356046] (-) TimerEvent: {}
+[27.456889] (-) TimerEvent: {}
+[27.557849] (-) TimerEvent: {}
+[27.658770] (-) TimerEvent: {}
+[27.759775] (-) TimerEvent: {}
+[27.860601] (-) TimerEvent: {}
+[27.961438] (-) TimerEvent: {}
+[28.062374] (-) TimerEvent: {}
+[28.163375] (-) TimerEvent: {}
+[28.264490] (-) TimerEvent: {}
+[28.365396] (-) TimerEvent: {}
+[28.466271] (-) TimerEvent: {}
+[28.567074] (-) TimerEvent: {}
+[28.667945] (-) TimerEvent: {}
+[28.768998] (-) TimerEvent: {}
+[28.869855] (-) TimerEvent: {}
+[28.970776] (-) TimerEvent: {}
+[29.071634] (-) TimerEvent: {}
+[29.172627] (-) TimerEvent: {}
+[29.273470] (-) TimerEvent: {}
+[29.374362] (-) TimerEvent: {}
+[29.475265] (-) TimerEvent: {}
+[29.576103] (-) TimerEvent: {}
+[29.676993] (-) TimerEvent: {}
+[29.777903] (-) TimerEvent: {}
+[29.878721] (-) TimerEvent: {}
+[29.979618] (-) TimerEvent: {}
+[30.080429] (-) TimerEvent: {}
+[30.181375] (-) TimerEvent: {}
+[30.282248] (-) TimerEvent: {}
+[30.383130] (-) TimerEvent: {}
+[30.483948] (-) TimerEvent: {}
+[30.584828] (-) TimerEvent: {}
+[30.685748] (-) TimerEvent: {}
+[30.786682] (-) TimerEvent: {}
+[30.887496] (-) TimerEvent: {}
+[30.988400] (-) TimerEvent: {}
+[31.089318] (-) TimerEvent: {}
+[31.190207] (-) TimerEvent: {}
+[31.291034] (-) TimerEvent: {}
+[31.391815] (-) TimerEvent: {}
+[31.492761] (-) TimerEvent: {}
+[31.593775] (-) TimerEvent: {}
+[31.694752] (-) TimerEvent: {}
+[31.795656] (-) TimerEvent: {}
+[31.896575] (-) TimerEvent: {}
+[31.997421] (-) TimerEvent: {}
+[32.098256] (-) TimerEvent: {}
+[32.199104] (-) TimerEvent: {}
+[32.299991] (-) TimerEvent: {}
+[32.400917] (-) TimerEvent: {}
+[32.501762] (-) TimerEvent: {}
+[32.602653] (-) TimerEvent: {}
+[32.703562] (-) TimerEvent: {}
+[32.804549] (-) TimerEvent: {}
+[32.905405] (-) TimerEvent: {}
+[33.006243] (-) TimerEvent: {}
+[33.107075] (-) TimerEvent: {}
+[33.208161] (-) TimerEvent: {}
+[33.309115] (-) TimerEvent: {}
+[33.409990] (-) TimerEvent: {}
+[33.510871] (-) TimerEvent: {}
+[33.611786] (-) TimerEvent: {}
+[33.712648] (-) TimerEvent: {}
+[33.813515] (-) TimerEvent: {}
+[33.914375] (-) TimerEvent: {}
+[34.015298] (-) TimerEvent: {}
+[34.116103] (-) TimerEvent: {}
+[34.217044] (-) TimerEvent: {}
+[34.317943] (-) TimerEvent: {}
+[34.419006] (-) TimerEvent: {}
+[34.519883] (-) TimerEvent: {}
+[34.620767] (-) TimerEvent: {}
+[34.721558] (-) TimerEvent: {}
+[34.822486] (-) TimerEvent: {}
+[34.923316] (-) TimerEvent: {}
+[35.024185] (-) TimerEvent: {}
+[35.125078] (-) TimerEvent: {}
+[35.225938] (-) TimerEvent: {}
+[35.326841] (-) TimerEvent: {}
+[35.427747] (-) TimerEvent: {}
+[35.528609] (-) TimerEvent: {}
+[35.629573] (-) TimerEvent: {}
+[35.730504] (-) TimerEvent: {}
+[35.831468] (-) TimerEvent: {}
+[35.932483] (-) TimerEvent: {}
+[36.033359] (-) TimerEvent: {}
+[36.134504] (-) TimerEvent: {}
+[36.235892] (-) TimerEvent: {}
+[36.337410] (-) TimerEvent: {}
+[36.438869] (-) TimerEvent: {}
+[36.540151] (-) TimerEvent: {}
+[36.641606] (-) TimerEvent: {}
+[36.742648] (-) TimerEvent: {}
+[36.843794] (-) TimerEvent: {}
+[36.944894] (-) TimerEvent: {}
+[37.045958] (-) TimerEvent: {}
+[37.147099] (-) TimerEvent: {}
+[37.249497] (-) TimerEvent: {}
+[37.351238] (-) TimerEvent: {}
+[37.453428] (-) TimerEvent: {}
+[37.554818] (-) TimerEvent: {}
+[37.657254] (-) TimerEvent: {}
+[37.759636] (-) TimerEvent: {}
+[37.860879] (-) TimerEvent: {}
+[37.962113] (-) TimerEvent: {}
+[38.063260] (-) TimerEvent: {}
+[38.165327] (-) TimerEvent: {}
+[38.266887] (-) TimerEvent: {}
+[38.367867] (-) TimerEvent: {}
+[38.468717] (-) TimerEvent: {}
+[38.569595] (-) TimerEvent: {}
+[38.670363] (-) TimerEvent: {}
+[38.771154] (-) TimerEvent: {}
+[38.872132] (-) TimerEvent: {}
+[38.973326] (-) TimerEvent: {}
+[39.074160] (-) TimerEvent: {}
+[39.174999] (-) TimerEvent: {}
+[39.275944] (-) TimerEvent: {}
+[39.376808] (-) TimerEvent: {}
+[39.477611] (-) TimerEvent: {}
+[39.578407] (-) TimerEvent: {}
+[39.679396] (-) TimerEvent: {}
+[39.780331] (-) TimerEvent: {}
+[39.881391] (-) TimerEvent: {}
+[39.982370] (-) TimerEvent: {}
+[40.083223] (-) TimerEvent: {}
+[40.184104] (-) TimerEvent: {}
+[40.285179] (-) TimerEvent: {}
+[40.386466] (-) TimerEvent: {}
+[40.487416] (-) TimerEvent: {}
+[40.588262] (-) TimerEvent: {}
+[40.637984] (fishbot_bringup) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable odom2tf\x1b[0m\n'}
+[40.688613] (-) TimerEvent: {}
+[40.789556] (-) TimerEvent: {}
+[40.890671] (-) TimerEvent: {}
+[40.991836] (-) TimerEvent: {}
+[41.093227] (-) TimerEvent: {}
+[41.194482] (-) TimerEvent: {}
+[41.295792] (-) TimerEvent: {}
+[41.396895] (-) TimerEvent: {}
+[41.498277] (-) TimerEvent: {}
+[41.599596] (-) TimerEvent: {}
+[41.700627] (-) TimerEvent: {}
+[41.801711] (-) TimerEvent: {}
+[41.903037] (-) TimerEvent: {}
+[42.004192] (-) TimerEvent: {}
+[42.105660] (-) TimerEvent: {}
+[42.207528] (-) TimerEvent: {}
+[42.308681] (-) TimerEvent: {}
+[42.409646] (-) TimerEvent: {}
+[42.510523] (-) TimerEvent: {}
+[42.611263] (-) TimerEvent: {}
+[42.712730] (-) TimerEvent: {}
+[42.814075] (-) TimerEvent: {}
+[42.915100] (-) TimerEvent: {}
+[43.016263] (-) TimerEvent: {}
+[43.117220] (-) TimerEvent: {}
+[43.218009] (-) TimerEvent: {}
+[43.295985] (fishbot_bringup) StdoutLine: {'line': b'[100%] Built target odom2tf\n'}
+[43.318313] (-) TimerEvent: {}
+[43.344131] (fishbot_bringup) CommandEnded: {'returncode': 0}
+[43.347240] (fishbot_bringup) JobProgress: {'identifier': 'fishbot_bringup', 'progress': 'install'}
+[43.352278] (fishbot_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xc/桌面/roscar_nav/build/fishbot_bringup'], 'cwd': '/home/xc/桌面/roscar_nav/build/fishbot_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'xc'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/xc'), ('OLDPWD', '/home/xc/桌面'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1348'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'xc'), ('DESKTOP_AUTOSTART_ID', '10a23f54a7a83c37b5177367776037011200000013480016'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'xc'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/xc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/xc-pi:@/tmp/.ICE-unix/1348,unix/xc-pi:/tmp/.ICE-unix/1348'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8d01d455_f9a2_4d61_9f63_bc54278eb58a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/xc/桌面/roscar_nav/build/fishbot_bringup'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[43.389240] (fishbot_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[43.418599] (-) TimerEvent: {}
+[43.466866] (fishbot_bringup) StdoutLine: {'line': b'-- Installing: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/lib/fishbot_bringup/odom2tf\n'}
+[43.505250] (fishbot_bringup) StdoutLine: {'line': b'-- Set runtime path of "/home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/lib/fishbot_bringup/odom2tf" to ""\n'}
+[43.505994] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/launch\n'}
+[43.506506] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/launch/urdf2tf.launch.py\n'}
+[43.506939] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/launch/bringup.launch.py\n'}
+[43.507382] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/launch/bringup_quick.launch.py\n'}
+[43.507815] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/ament_index/resource_index/package_run_dependencies/fishbot_bringup\n'}
+[43.508269] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/ament_index/resource_index/parent_prefix_path/fishbot_bringup\n'}
+[43.508783] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/environment/ament_prefix_path.sh\n'}
+[43.509313] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/environment/ament_prefix_path.dsv\n'}
+[43.509786] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/environment/path.sh\n'}
+[43.510231] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/environment/path.dsv\n'}
+[43.510768] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/local_setup.bash\n'}
+[43.511148] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/local_setup.sh\n'}
+[43.511564] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/local_setup.zsh\n'}
+[43.511902] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/local_setup.dsv\n'}
+[43.512354] (fishbot_bringup) StdoutLine: {'line': b'-- Installing: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/package.dsv\n'}
+[43.512964] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/ament_index/resource_index/packages/fishbot_bringup\n'}
+[43.513445] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/cmake/fishbot_bringupConfig.cmake\n'}
+[43.513822] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/cmake/fishbot_bringupConfig-version.cmake\n'}
+[43.514127] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/package.xml\n'}
+[43.518716] (-) TimerEvent: {}
+[43.563584] (fishbot_bringup) CommandEnded: {'returncode': 0}
+[43.619112] (-) TimerEvent: {}
+[43.720321] (-) TimerEvent: {}
+[43.821979] (-) TimerEvent: {}
+[43.914914] (fishbot_bringup) JobEnded: {'identifier': 'fishbot_bringup', 'rc': 0}
+[43.938040] (-) TimerEvent: {}
+[43.938487] (-) EventReactorShutdown: {}

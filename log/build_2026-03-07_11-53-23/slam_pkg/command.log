@@ -1,0 +1,6 @@
+Invoking command in '/home/xc/桌面/roscar_nav/build/slam_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/xc/桌面/roscar_nav/src/slam_pkg -DCMAKE_INSTALL_PREFIX=/home/xc/桌面/roscar_nav/install/slam_pkg
+Invoked command in '/home/xc/桌面/roscar_nav/build/slam_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/xc/桌面/roscar_nav/src/slam_pkg -DCMAKE_INSTALL_PREFIX=/home/xc/桌面/roscar_nav/install/slam_pkg
+Invoking command in '/home/xc/桌面/roscar_nav/build/slam_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/slam_pkg -- -j4 -l4
+Invoked command in '/home/xc/桌面/roscar_nav/build/slam_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/slam_pkg -- -j4 -l4
+Invoking command in '/home/xc/桌面/roscar_nav/build/slam_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/slam_pkg
+Invoked command in '/home/xc/桌面/roscar_nav/build/slam_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/slam_pkg

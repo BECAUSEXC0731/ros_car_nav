@@ -1,0 +1,31 @@
+[1.899s] Invoking command in '/home/xc/桌面/roscar_nav/build/lidar_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/lidar_pkg -- -j4 -l4
+[2.754s] [100%] Built target lidar_node
+[2.988s] Invoked command in '/home/xc/桌面/roscar_nav/build/lidar_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/lidar_pkg -- -j4 -l4
+[3.149s] Invoking command in '/home/xc/桌面/roscar_nav/build/lidar_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/lidar_pkg
+[6.177s] -- Install configuration: ""
+[6.180s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/lidar_pkg/lib/lidar_pkg/lidar_node
+[6.183s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/launch
+[6.192s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/launch/monitor.launch.py
+[6.194s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/launch/lidar.launch.py
+[6.194s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/urdf
+[6.195s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/urdf/lidar.urdf
+[6.198s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/rviz
+[6.200s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/rviz/lidar.rviz
+[6.202s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/config
+[6.203s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/config/lidar_params.yaml
+[6.204s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/lidar_pkg/share/ament_index/resource_index/package_run_dependencies/lidar_pkg
+[6.204s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/lidar_pkg/share/ament_index/resource_index/parent_prefix_path/lidar_pkg
+[6.205s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/environment/ament_prefix_path.sh
+[6.216s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/environment/ament_prefix_path.dsv
+[6.217s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/environment/path.sh
+[6.219s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/environment/path.dsv
+[6.221s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/local_setup.bash
+[6.224s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/local_setup.sh
+[6.225s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/local_setup.zsh
+[6.226s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/local_setup.dsv
+[6.228s] -- Installing: /home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/package.dsv
+[6.228s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/lidar_pkg/share/ament_index/resource_index/packages/lidar_pkg
+[6.229s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/cmake/lidar_pkgConfig.cmake
+[6.230s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/cmake/lidar_pkgConfig-version.cmake
+[6.230s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/package.xml
+[7.473s] Invoked command in '/home/xc/桌面/roscar_nav/build/lidar_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/lidar_pkg

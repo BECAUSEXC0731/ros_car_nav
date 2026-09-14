@@ -1,0 +1,4 @@
+Invoking command in '/home/xc/桌面/roscar_nav/build/fishbot_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/fishbot_bringup -- -j4 -l4
+Invoked command in '/home/xc/桌面/roscar_nav/build/fishbot_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/fishbot_bringup -- -j4 -l4
+Invoking command in '/home/xc/桌面/roscar_nav/build/fishbot_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/fishbot_bringup
+Invoked command in '/home/xc/桌面/roscar_nav/build/fishbot_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/fishbot_bringup

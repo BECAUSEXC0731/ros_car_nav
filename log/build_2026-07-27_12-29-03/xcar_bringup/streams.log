@@ -1,0 +1,77 @@
+[0.065s] Invoking command in '/home/xc/桌面/roscar_nav/build/xcar_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/xc/桌面/roscar_nav/src/xcar_bringup -DCMAKE_INSTALL_PREFIX=/home/xc/桌面/roscar_nav/install/xcar_bringup
+[0.506s] -- The C compiler identification is GNU 11.4.0
+[1.132s] -- The CXX compiler identification is GNU 11.4.0
+[1.182s] -- Detecting C compiler ABI info
+[1.766s] -- Detecting C compiler ABI info - done
+[1.796s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.799s] -- Detecting C compile features
+[1.799s] -- Detecting C compile features - done
+[1.811s] -- Detecting CXX compiler ABI info
+[2.366s] -- Detecting CXX compiler ABI info - done
+[2.402s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.404s] -- Detecting CXX compile features
+[2.407s] -- Detecting CXX compile features - done
+[2.453s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.446s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.230s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.842s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[5.392s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[5.458s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[5.553s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[6.656s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.524s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.625s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[9.922s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[11.316s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[11.680s] -- Found FastRTPS: /opt/ros/humble/include  
+[12.234s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[12.570s] -- Looking for pthread.h
+[13.071s] -- Looking for pthread.h - found
+[13.073s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[13.583s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[13.587s] -- Found Threads: TRUE  
+[13.940s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[14.174s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[14.767s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[14.871s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[14.872s] -- Configured cppcheck include dirs: 
+[14.873s] -- Configured cppcheck exclude dirs and/or files: 
+[14.875s] -- Added test 'flake8' to check Python code syntax and style conventions
+[14.879s] -- Added test 'lint_cmake' to check CMake code style
+[14.882s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[14.889s] -- Added test 'uncrustify' to check C / C++ code style
+[14.890s] -- Configured uncrustify additional arguments: 
+[14.893s] -- Added test 'xmllint' to check XML markup files
+[14.905s] -- Configuring done
+[14.996s] -- Generating done
+[15.026s] -- Build files have been written to: /home/xc/桌面/roscar_nav/build/xcar_bringup
+[15.073s] Invoked command in '/home/xc/桌面/roscar_nav/build/xcar_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/xc/桌面/roscar_nav/src/xcar_bringup -DCMAKE_INSTALL_PREFIX=/home/xc/桌面/roscar_nav/install/xcar_bringup
+[15.084s] Invoking command in '/home/xc/桌面/roscar_nav/build/xcar_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/xcar_bringup -- -j4 -l4
+[15.314s] [ 50%] [32mBuilding CXX object CMakeFiles/odom2tf.dir/src/odom2tf.cpp.o[0m
+[62.077s] [100%] [32m[1mLinking CXX executable odom2tf[0m
+[64.537s] [100%] Built target odom2tf
+[64.600s] Invoked command in '/home/xc/桌面/roscar_nav/build/xcar_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/xcar_bringup -- -j4 -l4
+[64.650s] Invoking command in '/home/xc/桌面/roscar_nav/build/xcar_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/xcar_bringup
+[64.652s] -- Install configuration: ""
+[64.657s] -- Installing: /home/xc/桌面/roscar_nav/install/xcar_bringup/lib/xcar_bringup/odom2tf
+[64.684s] -- Set runtime path of "/home/xc/桌面/roscar_nav/install/xcar_bringup/lib/xcar_bringup/odom2tf" to ""
+[64.685s] -- Installing: /home/xc/桌面/roscar_nav/install/xcar_bringup/share/xcar_bringup/launch
+[64.686s] -- Installing: /home/xc/桌面/roscar_nav/install/xcar_bringup/share/xcar_bringup/launch/urdf2tf.launch.py
+[64.687s] -- Installing: /home/xc/桌面/roscar_nav/install/xcar_bringup/share/xcar_bringup/launch/bringup.launch.py
+[64.690s] -- Installing: /home/xc/桌面/roscar_nav/install/xcar_bringup/share/xcar_bringup/launch/bringup_quick.launch.py
+[64.695s] -- Installing: /home/xc/桌面/roscar_nav/install/xcar_bringup/share/ament_index/resource_index/package_run_dependencies/xcar_bringup
+[64.697s] -- Installing: /home/xc/桌面/roscar_nav/install/xcar_bringup/share/ament_index/resource_index/parent_prefix_path/xcar_bringup
+[64.699s] -- Installing: /home/xc/桌面/roscar_nav/install/xcar_bringup/share/xcar_bringup/environment/ament_prefix_path.sh
+[64.700s] -- Installing: /home/xc/桌面/roscar_nav/install/xcar_bringup/share/xcar_bringup/environment/ament_prefix_path.dsv
+[64.701s] -- Installing: /home/xc/桌面/roscar_nav/install/xcar_bringup/share/xcar_bringup/environment/path.sh
+[64.702s] -- Installing: /home/xc/桌面/roscar_nav/install/xcar_bringup/share/xcar_bringup/environment/path.dsv
+[64.704s] -- Installing: /home/xc/桌面/roscar_nav/install/xcar_bringup/share/xcar_bringup/local_setup.bash
+[64.705s] -- Installing: /home/xc/桌面/roscar_nav/install/xcar_bringup/share/xcar_bringup/local_setup.sh
+[64.706s] -- Installing: /home/xc/桌面/roscar_nav/install/xcar_bringup/share/xcar_bringup/local_setup.zsh
+[64.707s] -- Installing: /home/xc/桌面/roscar_nav/install/xcar_bringup/share/xcar_bringup/local_setup.dsv
+[64.771s] -- Installing: /home/xc/桌面/roscar_nav/install/xcar_bringup/share/xcar_bringup/package.dsv
+[64.774s] -- Installing: /home/xc/桌面/roscar_nav/install/xcar_bringup/share/ament_index/resource_index/packages/xcar_bringup
+[64.777s] -- Installing: /home/xc/桌面/roscar_nav/install/xcar_bringup/share/xcar_bringup/cmake/xcar_bringupConfig.cmake
+[64.779s] -- Installing: /home/xc/桌面/roscar_nav/install/xcar_bringup/share/xcar_bringup/cmake/xcar_bringupConfig-version.cmake
+[64.780s] -- Installing: /home/xc/桌面/roscar_nav/install/xcar_bringup/share/xcar_bringup/package.xml
+[64.792s] Invoked command in '/home/xc/桌面/roscar_nav/build/xcar_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/xcar_bringup

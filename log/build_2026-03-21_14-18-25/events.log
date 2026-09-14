@@ -1,0 +1,532 @@
+[0.000000] (-) TimerEvent: {}
+[0.001735] (fishbot_bringup) JobQueued: {'identifier': 'fishbot_bringup', 'dependencies': OrderedDict()}
+[0.002278] (fishbot_description) JobQueued: {'identifier': 'fishbot_description', 'dependencies': OrderedDict()}
+[0.002470] (lidar_pkg) JobQueued: {'identifier': 'lidar_pkg', 'dependencies': OrderedDict()}
+[0.002617] (slam_pkg) JobQueued: {'identifier': 'slam_pkg', 'dependencies': OrderedDict()}
+[0.002810] (fishbot_bringup) JobStarted: {'identifier': 'fishbot_bringup'}
+[0.031810] (fishbot_description) JobStarted: {'identifier': 'fishbot_description'}
+[0.053732] (lidar_pkg) JobStarted: {'identifier': 'lidar_pkg'}
+[0.075489] (slam_pkg) JobStarted: {'identifier': 'slam_pkg'}
+[0.098835] (-) TimerEvent: {}
+[0.106283] (fishbot_bringup) JobProgress: {'identifier': 'fishbot_bringup', 'progress': 'cmake'}
+[0.110075] (fishbot_bringup) JobProgress: {'identifier': 'fishbot_bringup', 'progress': 'build'}
+[0.113446] (fishbot_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xc/桌面/roscar_nav/build/fishbot_bringup', '--', '-j4', '-l4'], 'cwd': '/home/xc/桌面/roscar_nav/build/fishbot_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'xc'), ('SSH_CLIENT', '10.19.168.51 50800 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/xc'), ('OLDPWD', '/home/xc/桌面'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/xc/桌面/roscar_nav/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/xc/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/xc/桌面/roscar_nav/install/slam_pkg:/home/xc/桌面/roscar_nav/install/lidar_pkg:/home/xc/桌面/roscar_nav/install/fishbot_description:/home/xc/桌面/roscar_nav/install/fishbot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/xc/桌面/roscar_nav/build/fishbot_bringup'), ('SSH_CONNECTION', '10.19.168.51 50800 10.19.168.18 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/xc/桌面/roscar_nav/install/slam_pkg:/home/xc/桌面/roscar_nav/install/lidar_pkg:/home/xc/桌面/roscar_nav/install/fishbot_description:/home/xc/桌面/roscar_nav/install/fishbot_bringup:/opt/ros/humble')]), 'shell': False}
+[0.128031] (fishbot_description) JobProgress: {'identifier': 'fishbot_description', 'progress': 'cmake'}
+[0.131820] (fishbot_description) JobProgress: {'identifier': 'fishbot_description', 'progress': 'build'}
+[0.133269] (fishbot_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xc/桌面/roscar_nav/build/fishbot_description', '--', '-j4', '-l4'], 'cwd': '/home/xc/桌面/roscar_nav/build/fishbot_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'xc'), ('SSH_CLIENT', '10.19.168.51 50800 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/xc'), ('OLDPWD', '/home/xc/桌面'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/xc/桌面/roscar_nav/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/xc/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/xc/桌面/roscar_nav/install/slam_pkg:/home/xc/桌面/roscar_nav/install/lidar_pkg:/home/xc/桌面/roscar_nav/install/fishbot_description:/home/xc/桌面/roscar_nav/install/fishbot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/xc/桌面/roscar_nav/build/fishbot_description'), ('SSH_CONNECTION', '10.19.168.51 50800 10.19.168.18 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/xc/桌面/roscar_nav/install/slam_pkg:/home/xc/桌面/roscar_nav/install/lidar_pkg:/home/xc/桌面/roscar_nav/install/fishbot_description:/home/xc/桌面/roscar_nav/install/fishbot_bringup:/opt/ros/humble')]), 'shell': False}
+[0.148014] (lidar_pkg) JobProgress: {'identifier': 'lidar_pkg', 'progress': 'cmake'}
+[0.155350] (lidar_pkg) JobProgress: {'identifier': 'lidar_pkg', 'progress': 'build'}
+[0.157573] (lidar_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xc/桌面/roscar_nav/build/lidar_pkg', '--', '-j4', '-l4'], 'cwd': '/home/xc/桌面/roscar_nav/build/lidar_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'xc'), ('SSH_CLIENT', '10.19.168.51 50800 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/xc'), ('OLDPWD', '/home/xc/桌面'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/xc/桌面/roscar_nav/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/xc/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/xc/桌面/roscar_nav/install/slam_pkg:/home/xc/桌面/roscar_nav/install/lidar_pkg:/home/xc/桌面/roscar_nav/install/fishbot_description:/home/xc/桌面/roscar_nav/install/fishbot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/xc/桌面/roscar_nav/build/lidar_pkg'), ('SSH_CONNECTION', '10.19.168.51 50800 10.19.168.18 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/xc/桌面/roscar_nav/install/slam_pkg:/home/xc/桌面/roscar_nav/install/lidar_pkg:/home/xc/桌面/roscar_nav/install/fishbot_description:/home/xc/桌面/roscar_nav/install/fishbot_bringup:/opt/ros/humble')]), 'shell': False}
+[0.199073] (-) TimerEvent: {}
+[0.226961] (slam_pkg) JobProgress: {'identifier': 'slam_pkg', 'progress': 'cmake'}
+[0.228562] (slam_pkg) JobProgress: {'identifier': 'slam_pkg', 'progress': 'build'}
+[0.230819] (slam_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xc/桌面/roscar_nav/build/slam_pkg', '--', '-j4', '-l4'], 'cwd': '/home/xc/桌面/roscar_nav/build/slam_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'xc'), ('SSH_CLIENT', '10.19.168.51 50800 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/xc'), ('OLDPWD', '/home/xc/桌面'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/xc/桌面/roscar_nav/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/xc/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/xc/桌面/roscar_nav/install/slam_pkg:/home/xc/桌面/roscar_nav/install/lidar_pkg:/home/xc/桌面/roscar_nav/install/fishbot_description:/home/xc/桌面/roscar_nav/install/fishbot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/xc/桌面/roscar_nav/build/slam_pkg'), ('SSH_CONNECTION', '10.19.168.51 50800 10.19.168.18 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/xc/桌面/roscar_nav/install/slam_pkg:/home/xc/桌面/roscar_nav/install/lidar_pkg:/home/xc/桌面/roscar_nav/install/fishbot_description:/home/xc/桌面/roscar_nav/install/fishbot_bringup:/opt/ros/humble')]), 'shell': False}
+[0.299288] (-) TimerEvent: {}
+[0.351158] (fishbot_description) CommandEnded: {'returncode': 0}
+[0.353425] (fishbot_description) JobProgress: {'identifier': 'fishbot_description', 'progress': 'install'}
+[0.355730] (fishbot_bringup) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target odom2tf\x1b[0m\n'}
+[0.387629] (fishbot_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xc/桌面/roscar_nav/build/fishbot_description'], 'cwd': '/home/xc/桌面/roscar_nav/build/fishbot_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'xc'), ('SSH_CLIENT', '10.19.168.51 50800 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/xc'), ('OLDPWD', '/home/xc/桌面'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/xc/桌面/roscar_nav/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/xc/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/xc/桌面/roscar_nav/install/slam_pkg:/home/xc/桌面/roscar_nav/install/lidar_pkg:/home/xc/桌面/roscar_nav/install/fishbot_description:/home/xc/桌面/roscar_nav/install/fishbot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/xc/桌面/roscar_nav/build/fishbot_description'), ('SSH_CONNECTION', '10.19.168.51 50800 10.19.168.18 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/xc/桌面/roscar_nav/install/slam_pkg:/home/xc/桌面/roscar_nav/install/lidar_pkg:/home/xc/桌面/roscar_nav/install/fishbot_description:/home/xc/桌面/roscar_nav/install/fishbot_bringup:/opt/ros/humble')]), 'shell': False}
+[0.400129] (-) TimerEvent: {}
+[0.429060] (fishbot_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.430288] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/urdf\n'}
+[0.431211] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/urdf/fishbot.urdf\n'}
+[0.432258] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/ament_index/resource_index/package_run_dependencies/fishbot_description\n'}
+[0.433243] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/ament_index/resource_index/parent_prefix_path/fishbot_description\n'}
+[0.433947] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/environment/ament_prefix_path.sh\n'}
+[0.434885] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/environment/ament_prefix_path.dsv\n'}
+[0.435723] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/environment/path.sh\n'}
+[0.436196] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/environment/path.dsv\n'}
+[0.436629] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/local_setup.bash\n'}
+[0.437660] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/local_setup.sh\n'}
+[0.439093] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/local_setup.zsh\n'}
+[0.440180] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/local_setup.dsv\n'}
+[0.441195] (fishbot_description) StdoutLine: {'line': b'-- Installing: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/package.dsv\n'}
+[0.441905] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/ament_index/resource_index/packages/fishbot_description\n'}
+[0.442735] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/cmake/fishbot_descriptionConfig.cmake\n'}
+[0.466706] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/cmake/fishbot_descriptionConfig-version.cmake\n'}
+[0.468210] (fishbot_description) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_description/share/fishbot_description/package.xml\n'}
+[0.468953] (fishbot_description) CommandEnded: {'returncode': 0}
+[0.476770] (fishbot_bringup) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/odom2tf.dir/src/odom2tf.cpp.o\x1b[0m\n'}
+[0.500400] (-) TimerEvent: {}
+[0.503540] (lidar_pkg) StdoutLine: {'line': b'[100%] Built target lidar_node\n'}
+[0.600587] (-) TimerEvent: {}
+[0.701356] (-) TimerEvent: {}
+[0.802083] (-) TimerEvent: {}
+[0.882690] (fishbot_description) JobEnded: {'identifier': 'fishbot_description', 'rc': 0}
+[0.959020] (-) TimerEvent: {}
+[0.959882] (lidar_pkg) CommandEnded: {'returncode': 0}
+[0.962553] (lidar_pkg) JobProgress: {'identifier': 'lidar_pkg', 'progress': 'install'}
+[0.963031] (lidar_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xc/桌面/roscar_nav/build/lidar_pkg'], 'cwd': '/home/xc/桌面/roscar_nav/build/lidar_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'xc'), ('SSH_CLIENT', '10.19.168.51 50800 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/xc'), ('OLDPWD', '/home/xc/桌面'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/xc/桌面/roscar_nav/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/xc/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/xc/桌面/roscar_nav/install/slam_pkg:/home/xc/桌面/roscar_nav/install/lidar_pkg:/home/xc/桌面/roscar_nav/install/fishbot_description:/home/xc/桌面/roscar_nav/install/fishbot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/xc/桌面/roscar_nav/build/lidar_pkg'), ('SSH_CONNECTION', '10.19.168.51 50800 10.19.168.18 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/xc/桌面/roscar_nav/install/slam_pkg:/home/xc/桌面/roscar_nav/install/lidar_pkg:/home/xc/桌面/roscar_nav/install/fishbot_description:/home/xc/桌面/roscar_nav/install/fishbot_bringup:/opt/ros/humble')]), 'shell': False}
+[0.966936] (slam_pkg) CommandEnded: {'returncode': 0}
+[0.971509] (slam_pkg) JobProgress: {'identifier': 'slam_pkg', 'progress': 'install'}
+[0.971693] (slam_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xc/桌面/roscar_nav/build/slam_pkg'], 'cwd': '/home/xc/桌面/roscar_nav/build/slam_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'xc'), ('SSH_CLIENT', '10.19.168.51 50800 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/xc'), ('OLDPWD', '/home/xc/桌面'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/xc/桌面/roscar_nav/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/xc/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/xc/桌面/roscar_nav/install/slam_pkg:/home/xc/桌面/roscar_nav/install/lidar_pkg:/home/xc/桌面/roscar_nav/install/fishbot_description:/home/xc/桌面/roscar_nav/install/fishbot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/xc/桌面/roscar_nav/build/slam_pkg'), ('SSH_CONNECTION', '10.19.168.51 50800 10.19.168.18 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/xc/桌面/roscar_nav/install/slam_pkg:/home/xc/桌面/roscar_nav/install/lidar_pkg:/home/xc/桌面/roscar_nav/install/fishbot_description:/home/xc/桌面/roscar_nav/install/fishbot_bringup:/opt/ros/humble')]), 'shell': False}
+[1.042080] (lidar_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.042818] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/lib/lidar_pkg/lidar_node\n'}
+[1.044512] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/launch\n'}
+[1.045149] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/launch/monitor.launch.py\n'}
+[1.045788] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/launch/lidar.launch.py\n'}
+[1.046334] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/urdf\n'}
+[1.046805] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/urdf/lidar.urdf\n'}
+[1.047262] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/rviz\n'}
+[1.047707] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/rviz/lidar.rviz\n'}
+[1.048281] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/config\n'}
+[1.050508] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/config/lidar_params.yaml\n'}
+[1.050994] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/ament_index/resource_index/package_run_dependencies/lidar_pkg\n'}
+[1.052912] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/ament_index/resource_index/parent_prefix_path/lidar_pkg\n'}
+[1.054159] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/environment/ament_prefix_path.sh\n'}
+[1.054744] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/environment/ament_prefix_path.dsv\n'}
+[1.055844] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/environment/path.sh\n'}
+[1.056287] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/environment/path.dsv\n'}
+[1.056893] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/local_setup.bash\n'}
+[1.057228] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/local_setup.sh\n'}
+[1.057522] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/local_setup.zsh\n'}
+[1.057889] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/local_setup.dsv\n'}
+[1.058191] (lidar_pkg) StdoutLine: {'line': b'-- Installing: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/package.dsv\n'}
+[1.058474] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/ament_index/resource_index/packages/lidar_pkg\n'}
+[1.058755] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/cmake/lidar_pkgConfig.cmake\n'}
+[1.059031] (-) TimerEvent: {}
+[1.059401] (slam_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.060006] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/cmake/lidar_pkgConfig-version.cmake\n'}
+[1.060351] (lidar_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/lidar_pkg/share/lidar_pkg/package.xml\n'}
+[1.060726] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg//launch\n'}
+[1.061306] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg//launch/slam.launch.py\n'}
+[1.061936] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg//launch/slam_robot.launch.py\n'}
+[1.062418] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg//launch/slam_pc.launch.py\n'}
+[1.062899] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/ament_index/resource_index/package_run_dependencies/slam_pkg\n'}
+[1.063339] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/ament_index/resource_index/parent_prefix_path/slam_pkg\n'}
+[1.063741] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg/environment/ament_prefix_path.sh\n'}
+[1.064201] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg/environment/ament_prefix_path.dsv\n'}
+[1.064594] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg/environment/path.sh\n'}
+[1.065054] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg/environment/path.dsv\n'}
+[1.065371] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg/local_setup.bash\n'}
+[1.065662] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg/local_setup.sh\n'}
+[1.065947] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg/local_setup.zsh\n'}
+[1.066231] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg/local_setup.dsv\n'}
+[1.066541] (slam_pkg) StdoutLine: {'line': b'-- Installing: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg/package.dsv\n'}
+[1.066827] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/ament_index/resource_index/packages/slam_pkg\n'}
+[1.067111] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg/cmake/slam_pkgConfig.cmake\n'}
+[1.067392] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg/cmake/slam_pkgConfig-version.cmake\n'}
+[1.067750] (slam_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/slam_pkg/share/slam_pkg/package.xml\n'}
+[1.068047] (lidar_pkg) CommandEnded: {'returncode': 0}
+[1.159392] (-) TimerEvent: {}
+[1.260457] (-) TimerEvent: {}
+[1.361284] (-) TimerEvent: {}
+[1.432148] (lidar_pkg) JobEnded: {'identifier': 'lidar_pkg', 'rc': 0}
+[1.437873] (slam_pkg) CommandEnded: {'returncode': 0}
+[1.522994] (-) TimerEvent: {}
+[1.623696] (-) TimerEvent: {}
+[1.724459] (-) TimerEvent: {}
+[1.825232] (-) TimerEvent: {}
+[1.925972] (-) TimerEvent: {}
+[1.941454] (slam_pkg) JobEnded: {'identifier': 'slam_pkg', 'rc': 0}
+[2.026164] (-) TimerEvent: {}
+[2.126909] (-) TimerEvent: {}
+[2.227617] (-) TimerEvent: {}
+[2.328431] (-) TimerEvent: {}
+[2.429324] (-) TimerEvent: {}
+[2.530114] (-) TimerEvent: {}
+[2.630907] (-) TimerEvent: {}
+[2.731734] (-) TimerEvent: {}
+[2.832640] (-) TimerEvent: {}
+[2.933548] (-) TimerEvent: {}
+[3.034377] (-) TimerEvent: {}
+[3.135149] (-) TimerEvent: {}
+[3.236010] (-) TimerEvent: {}
+[3.337011] (-) TimerEvent: {}
+[3.437820] (-) TimerEvent: {}
+[3.538551] (-) TimerEvent: {}
+[3.639313] (-) TimerEvent: {}
+[3.740060] (-) TimerEvent: {}
+[3.840897] (-) TimerEvent: {}
+[3.941718] (-) TimerEvent: {}
+[4.042466] (-) TimerEvent: {}
+[4.143218] (-) TimerEvent: {}
+[4.244031] (-) TimerEvent: {}
+[4.345245] (-) TimerEvent: {}
+[4.446292] (-) TimerEvent: {}
+[4.547051] (-) TimerEvent: {}
+[4.647830] (-) TimerEvent: {}
+[4.748754] (-) TimerEvent: {}
+[4.849812] (-) TimerEvent: {}
+[4.950804] (-) TimerEvent: {}
+[5.051700] (-) TimerEvent: {}
+[5.152974] (-) TimerEvent: {}
+[5.254673] (-) TimerEvent: {}
+[5.355584] (-) TimerEvent: {}
+[5.456501] (-) TimerEvent: {}
+[5.557305] (-) TimerEvent: {}
+[5.658229] (-) TimerEvent: {}
+[5.759073] (-) TimerEvent: {}
+[5.859845] (-) TimerEvent: {}
+[5.960606] (-) TimerEvent: {}
+[6.061373] (-) TimerEvent: {}
+[6.162080] (-) TimerEvent: {}
+[6.262806] (-) TimerEvent: {}
+[6.363609] (-) TimerEvent: {}
+[6.464327] (-) TimerEvent: {}
+[6.565082] (-) TimerEvent: {}
+[6.665818] (-) TimerEvent: {}
+[6.766540] (-) TimerEvent: {}
+[6.867305] (-) TimerEvent: {}
+[6.968030] (-) TimerEvent: {}
+[7.068867] (-) TimerEvent: {}
+[7.169574] (-) TimerEvent: {}
+[7.270352] (-) TimerEvent: {}
+[7.371086] (-) TimerEvent: {}
+[7.471842] (-) TimerEvent: {}
+[7.572642] (-) TimerEvent: {}
+[7.673392] (-) TimerEvent: {}
+[7.774107] (-) TimerEvent: {}
+[7.874826] (-) TimerEvent: {}
+[7.975521] (-) TimerEvent: {}
+[8.076285] (-) TimerEvent: {}
+[8.177016] (-) TimerEvent: {}
+[8.277714] (-) TimerEvent: {}
+[8.378384] (-) TimerEvent: {}
+[8.479061] (-) TimerEvent: {}
+[8.579769] (-) TimerEvent: {}
+[8.680511] (-) TimerEvent: {}
+[8.781295] (-) TimerEvent: {}
+[8.882105] (-) TimerEvent: {}
+[8.982889] (-) TimerEvent: {}
+[9.083677] (-) TimerEvent: {}
+[9.184456] (-) TimerEvent: {}
+[9.285195] (-) TimerEvent: {}
+[9.385891] (-) TimerEvent: {}
+[9.486600] (-) TimerEvent: {}
+[9.587340] (-) TimerEvent: {}
+[9.688074] (-) TimerEvent: {}
+[9.788882] (-) TimerEvent: {}
+[9.889628] (-) TimerEvent: {}
+[9.990360] (-) TimerEvent: {}
+[10.091106] (-) TimerEvent: {}
+[10.191836] (-) TimerEvent: {}
+[10.292609] (-) TimerEvent: {}
+[10.393337] (-) TimerEvent: {}
+[10.494023] (-) TimerEvent: {}
+[10.594720] (-) TimerEvent: {}
+[10.695431] (-) TimerEvent: {}
+[10.796153] (-) TimerEvent: {}
+[10.896898] (-) TimerEvent: {}
+[10.997649] (-) TimerEvent: {}
+[11.098360] (-) TimerEvent: {}
+[11.199072] (-) TimerEvent: {}
+[11.299785] (-) TimerEvent: {}
+[11.400527] (-) TimerEvent: {}
+[11.501315] (-) TimerEvent: {}
+[11.602012] (-) TimerEvent: {}
+[11.702722] (-) TimerEvent: {}
+[11.803456] (-) TimerEvent: {}
+[11.904199] (-) TimerEvent: {}
+[12.004932] (-) TimerEvent: {}
+[12.105681] (-) TimerEvent: {}
+[12.206392] (-) TimerEvent: {}
+[12.307112] (-) TimerEvent: {}
+[12.407861] (-) TimerEvent: {}
+[12.508554] (-) TimerEvent: {}
+[12.611140] (-) TimerEvent: {}
+[12.711868] (-) TimerEvent: {}
+[12.812677] (-) TimerEvent: {}
+[12.913434] (-) TimerEvent: {}
+[13.014169] (-) TimerEvent: {}
+[13.115029] (-) TimerEvent: {}
+[13.215760] (-) TimerEvent: {}
+[13.316489] (-) TimerEvent: {}
+[13.417252] (-) TimerEvent: {}
+[13.517967] (-) TimerEvent: {}
+[13.618684] (-) TimerEvent: {}
+[13.719432] (-) TimerEvent: {}
+[13.820148] (-) TimerEvent: {}
+[13.920870] (-) TimerEvent: {}
+[14.021637] (-) TimerEvent: {}
+[14.122353] (-) TimerEvent: {}
+[14.223076] (-) TimerEvent: {}
+[14.323822] (-) TimerEvent: {}
+[14.424512] (-) TimerEvent: {}
+[14.525344] (-) TimerEvent: {}
+[14.626204] (-) TimerEvent: {}
+[14.726955] (-) TimerEvent: {}
+[14.827736] (-) TimerEvent: {}
+[14.928441] (-) TimerEvent: {}
+[15.029186] (-) TimerEvent: {}
+[15.129895] (-) TimerEvent: {}
+[15.230596] (-) TimerEvent: {}
+[15.331304] (-) TimerEvent: {}
+[15.432013] (-) TimerEvent: {}
+[15.532752] (-) TimerEvent: {}
+[15.633466] (-) TimerEvent: {}
+[15.734218] (-) TimerEvent: {}
+[15.834970] (-) TimerEvent: {}
+[15.935789] (-) TimerEvent: {}
+[16.036525] (-) TimerEvent: {}
+[16.137295] (-) TimerEvent: {}
+[16.238072] (-) TimerEvent: {}
+[16.338810] (-) TimerEvent: {}
+[16.439557] (-) TimerEvent: {}
+[16.540348] (-) TimerEvent: {}
+[16.641153] (-) TimerEvent: {}
+[16.741922] (-) TimerEvent: {}
+[16.842632] (-) TimerEvent: {}
+[16.943360] (-) TimerEvent: {}
+[17.044132] (-) TimerEvent: {}
+[17.144858] (-) TimerEvent: {}
+[17.245581] (-) TimerEvent: {}
+[17.346339] (-) TimerEvent: {}
+[17.447039] (-) TimerEvent: {}
+[17.547770] (-) TimerEvent: {}
+[17.648608] (-) TimerEvent: {}
+[17.749395] (-) TimerEvent: {}
+[17.850119] (-) TimerEvent: {}
+[17.950879] (-) TimerEvent: {}
+[18.051590] (-) TimerEvent: {}
+[18.152329] (-) TimerEvent: {}
+[18.253206] (-) TimerEvent: {}
+[18.353926] (-) TimerEvent: {}
+[18.454638] (-) TimerEvent: {}
+[18.555289] (-) TimerEvent: {}
+[18.655971] (-) TimerEvent: {}
+[18.756659] (-) TimerEvent: {}
+[18.857439] (-) TimerEvent: {}
+[18.958155] (-) TimerEvent: {}
+[19.058891] (-) TimerEvent: {}
+[19.159721] (-) TimerEvent: {}
+[19.260483] (-) TimerEvent: {}
+[19.361276] (-) TimerEvent: {}
+[19.462114] (-) TimerEvent: {}
+[19.563184] (-) TimerEvent: {}
+[19.663907] (-) TimerEvent: {}
+[19.764722] (-) TimerEvent: {}
+[19.865501] (-) TimerEvent: {}
+[19.966511] (-) TimerEvent: {}
+[20.067277] (-) TimerEvent: {}
+[20.168343] (-) TimerEvent: {}
+[20.269784] (-) TimerEvent: {}
+[20.370698] (-) TimerEvent: {}
+[20.471425] (-) TimerEvent: {}
+[20.572142] (-) TimerEvent: {}
+[20.672911] (-) TimerEvent: {}
+[20.773616] (-) TimerEvent: {}
+[20.874329] (-) TimerEvent: {}
+[20.975141] (-) TimerEvent: {}
+[21.075885] (-) TimerEvent: {}
+[21.176741] (-) TimerEvent: {}
+[21.277564] (-) TimerEvent: {}
+[21.378418] (-) TimerEvent: {}
+[21.479202] (-) TimerEvent: {}
+[21.579984] (-) TimerEvent: {}
+[21.680833] (-) TimerEvent: {}
+[21.781643] (-) TimerEvent: {}
+[21.882509] (-) TimerEvent: {}
+[21.983298] (-) TimerEvent: {}
+[22.084063] (-) TimerEvent: {}
+[22.184822] (-) TimerEvent: {}
+[22.285721] (-) TimerEvent: {}
+[22.386513] (-) TimerEvent: {}
+[22.487241] (-) TimerEvent: {}
+[22.588088] (-) TimerEvent: {}
+[22.688916] (-) TimerEvent: {}
+[22.789823] (-) TimerEvent: {}
+[22.890780] (-) TimerEvent: {}
+[22.991585] (-) TimerEvent: {}
+[23.092363] (-) TimerEvent: {}
+[23.193254] (-) TimerEvent: {}
+[23.294159] (-) TimerEvent: {}
+[23.395028] (-) TimerEvent: {}
+[23.495779] (-) TimerEvent: {}
+[23.596733] (-) TimerEvent: {}
+[23.697912] (-) TimerEvent: {}
+[23.798680] (-) TimerEvent: {}
+[23.899484] (-) TimerEvent: {}
+[24.000377] (-) TimerEvent: {}
+[24.101453] (-) TimerEvent: {}
+[24.202254] (-) TimerEvent: {}
+[24.303162] (-) TimerEvent: {}
+[24.404050] (-) TimerEvent: {}
+[24.754518] (-) TimerEvent: {}
+[24.904188] (-) TimerEvent: {}
+[25.005108] (-) TimerEvent: {}
+[25.106285] (-) TimerEvent: {}
+[25.207153] (-) TimerEvent: {}
+[25.308286] (-) TimerEvent: {}
+[25.409014] (-) TimerEvent: {}
+[25.509733] (-) TimerEvent: {}
+[25.610501] (-) TimerEvent: {}
+[25.711424] (-) TimerEvent: {}
+[25.812627] (-) TimerEvent: {}
+[25.913404] (-) TimerEvent: {}
+[26.014145] (-) TimerEvent: {}
+[26.114866] (-) TimerEvent: {}
+[26.215693] (-) TimerEvent: {}
+[26.316454] (-) TimerEvent: {}
+[26.417160] (-) TimerEvent: {}
+[26.517956] (-) TimerEvent: {}
+[26.618823] (-) TimerEvent: {}
+[26.720077] (-) TimerEvent: {}
+[26.820906] (-) TimerEvent: {}
+[26.921664] (-) TimerEvent: {}
+[27.022539] (-) TimerEvent: {}
+[27.123292] (-) TimerEvent: {}
+[27.224105] (-) TimerEvent: {}
+[27.325023] (-) TimerEvent: {}
+[27.426168] (-) TimerEvent: {}
+[27.527010] (-) TimerEvent: {}
+[27.627862] (-) TimerEvent: {}
+[27.729019] (-) TimerEvent: {}
+[27.829832] (-) TimerEvent: {}
+[27.930998] (-) TimerEvent: {}
+[28.031859] (-) TimerEvent: {}
+[28.132550] (-) TimerEvent: {}
+[28.233355] (-) TimerEvent: {}
+[28.334185] (-) TimerEvent: {}
+[28.435082] (-) TimerEvent: {}
+[28.536001] (-) TimerEvent: {}
+[28.637195] (-) TimerEvent: {}
+[28.738136] (-) TimerEvent: {}
+[28.839392] (-) TimerEvent: {}
+[28.940239] (-) TimerEvent: {}
+[29.041419] (-) TimerEvent: {}
+[29.142241] (-) TimerEvent: {}
+[29.243023] (-) TimerEvent: {}
+[29.343810] (-) TimerEvent: {}
+[29.444821] (-) TimerEvent: {}
+[29.545898] (-) TimerEvent: {}
+[29.646637] (-) TimerEvent: {}
+[29.747482] (-) TimerEvent: {}
+[29.848298] (-) TimerEvent: {}
+[29.949149] (-) TimerEvent: {}
+[30.049923] (-) TimerEvent: {}
+[30.150688] (-) TimerEvent: {}
+[30.251645] (-) TimerEvent: {}
+[30.352952] (-) TimerEvent: {}
+[30.454181] (-) TimerEvent: {}
+[30.555297] (-) TimerEvent: {}
+[30.656191] (-) TimerEvent: {}
+[30.756979] (-) TimerEvent: {}
+[30.857854] (-) TimerEvent: {}
+[30.959007] (-) TimerEvent: {}
+[31.059780] (-) TimerEvent: {}
+[31.160554] (-) TimerEvent: {}
+[31.261300] (-) TimerEvent: {}
+[31.362048] (-) TimerEvent: {}
+[31.462813] (-) TimerEvent: {}
+[31.563600] (-) TimerEvent: {}
+[31.664489] (-) TimerEvent: {}
+[31.765391] (-) TimerEvent: {}
+[31.866566] (-) TimerEvent: {}
+[31.967359] (-) TimerEvent: {}
+[32.068230] (-) TimerEvent: {}
+[32.169046] (-) TimerEvent: {}
+[32.269883] (-) TimerEvent: {}
+[32.370690] (-) TimerEvent: {}
+[32.471636] (-) TimerEvent: {}
+[32.572430] (-) TimerEvent: {}
+[32.673230] (-) TimerEvent: {}
+[32.774231] (-) TimerEvent: {}
+[32.875249] (-) TimerEvent: {}
+[32.975982] (-) TimerEvent: {}
+[33.076804] (-) TimerEvent: {}
+[33.177558] (-) TimerEvent: {}
+[33.278361] (-) TimerEvent: {}
+[33.379149] (-) TimerEvent: {}
+[33.479891] (-) TimerEvent: {}
+[33.580716] (-) TimerEvent: {}
+[33.681495] (-) TimerEvent: {}
+[33.782390] (-) TimerEvent: {}
+[33.902384] (-) TimerEvent: {}
+[34.003288] (-) TimerEvent: {}
+[34.119606] (-) TimerEvent: {}
+[34.645453] (-) TimerEvent: {}
+[34.746559] (-) TimerEvent: {}
+[34.847565] (-) TimerEvent: {}
+[35.494427] (-) TimerEvent: {}
+[35.595598] (-) TimerEvent: {}
+[35.701877] (-) TimerEvent: {}
+[35.822346] (-) TimerEvent: {}
+[35.923186] (-) TimerEvent: {}
+[36.024003] (-) TimerEvent: {}
+[36.124730] (-) TimerEvent: {}
+[36.225463] (-) TimerEvent: {}
+[36.326248] (-) TimerEvent: {}
+[36.427004] (-) TimerEvent: {}
+[36.527774] (-) TimerEvent: {}
+[36.628639] (-) TimerEvent: {}
+[36.729454] (-) TimerEvent: {}
+[36.830179] (-) TimerEvent: {}
+[36.930908] (-) TimerEvent: {}
+[37.031646] (-) TimerEvent: {}
+[37.132484] (-) TimerEvent: {}
+[37.233255] (-) TimerEvent: {}
+[37.334042] (-) TimerEvent: {}
+[37.434759] (-) TimerEvent: {}
+[37.535537] (-) TimerEvent: {}
+[37.636319] (-) TimerEvent: {}
+[37.737126] (-) TimerEvent: {}
+[37.838218] (-) TimerEvent: {}
+[37.939156] (-) TimerEvent: {}
+[38.039895] (-) TimerEvent: {}
+[38.140889] (-) TimerEvent: {}
+[38.241928] (-) TimerEvent: {}
+[38.342878] (-) TimerEvent: {}
+[38.444184] (-) TimerEvent: {}
+[38.545290] (-) TimerEvent: {}
+[38.646593] (-) TimerEvent: {}
+[38.653349] (fishbot_bringup) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable odom2tf\x1b[0m\n'}
+[38.746859] (-) TimerEvent: {}
+[38.848011] (-) TimerEvent: {}
+[38.948910] (-) TimerEvent: {}
+[39.049721] (-) TimerEvent: {}
+[39.150872] (-) TimerEvent: {}
+[39.252120] (-) TimerEvent: {}
+[39.353496] (-) TimerEvent: {}
+[39.454596] (-) TimerEvent: {}
+[39.555710] (-) TimerEvent: {}
+[39.656960] (-) TimerEvent: {}
+[39.757834] (-) TimerEvent: {}
+[39.858714] (-) TimerEvent: {}
+[39.959410] (-) TimerEvent: {}
+[40.060113] (-) TimerEvent: {}
+[40.161035] (-) TimerEvent: {}
+[40.261751] (-) TimerEvent: {}
+[40.362586] (-) TimerEvent: {}
+[40.463731] (-) TimerEvent: {}
+[40.564594] (-) TimerEvent: {}
+[40.665496] (-) TimerEvent: {}
+[40.766768] (-) TimerEvent: {}
+[40.867621] (-) TimerEvent: {}
+[40.881765] (fishbot_bringup) StdoutLine: {'line': b'[100%] Built target odom2tf\n'}
+[40.968014] (-) TimerEvent: {}
+[40.978334] (fishbot_bringup) CommandEnded: {'returncode': 0}
+[40.980545] (fishbot_bringup) JobProgress: {'identifier': 'fishbot_bringup', 'progress': 'install'}
+[40.987326] (fishbot_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xc/桌面/roscar_nav/build/fishbot_bringup'], 'cwd': '/home/xc/桌面/roscar_nav/build/fishbot_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'xc'), ('SSH_CLIENT', '10.19.168.51 50800 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/xc'), ('OLDPWD', '/home/xc/桌面'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/xc/桌面/roscar_nav/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xc'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/xc/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/xc/桌面/roscar_nav/install/slam_pkg:/home/xc/桌面/roscar_nav/install/lidar_pkg:/home/xc/桌面/roscar_nav/install/fishbot_description:/home/xc/桌面/roscar_nav/install/fishbot_bringup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/xc/桌面/roscar_nav/build/fishbot_bringup'), ('SSH_CONNECTION', '10.19.168.51 50800 10.19.168.18 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/xc/桌面/roscar_nav/install/slam_pkg:/home/xc/桌面/roscar_nav/install/lidar_pkg:/home/xc/桌面/roscar_nav/install/fishbot_description:/home/xc/桌面/roscar_nav/install/fishbot_bringup:/opt/ros/humble')]), 'shell': False}
+[41.015226] (fishbot_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[41.016527] (fishbot_bringup) StdoutLine: {'line': b'-- Installing: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/lib/fishbot_bringup/odom2tf\n'}
+[41.053880] (fishbot_bringup) StdoutLine: {'line': b'-- Set runtime path of "/home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/lib/fishbot_bringup/odom2tf" to ""\n'}
+[41.054583] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/launch\n'}
+[41.055084] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/launch/urdf2tf.launch.py\n'}
+[41.055498] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/launch/bringup.launch.py\n'}
+[41.055906] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/launch/bringup_quick.launch.py\n'}
+[41.056332] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/ament_index/resource_index/package_run_dependencies/fishbot_bringup\n'}
+[41.056777] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/ament_index/resource_index/parent_prefix_path/fishbot_bringup\n'}
+[41.057317] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/environment/ament_prefix_path.sh\n'}
+[41.057753] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/environment/ament_prefix_path.dsv\n'}
+[41.058164] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/environment/path.sh\n'}
+[41.058555] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/environment/path.dsv\n'}
+[41.058999] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/local_setup.bash\n'}
+[41.059359] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/local_setup.sh\n'}
+[41.059642] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/local_setup.zsh\n'}
+[41.059914] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/local_setup.dsv\n'}
+[41.060192] (fishbot_bringup) StdoutLine: {'line': b'-- Installing: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/package.dsv\n'}
+[41.068066] (-) TimerEvent: {}
+[41.110517] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/ament_index/resource_index/packages/fishbot_bringup\n'}
+[41.113113] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/cmake/fishbot_bringupConfig.cmake\n'}
+[41.114146] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/cmake/fishbot_bringupConfig-version.cmake\n'}
+[41.117241] (fishbot_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/xc/\xe6\xa1\x8c\xe9\x9d\xa2/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/package.xml\n'}
+[41.121034] (fishbot_bringup) CommandEnded: {'returncode': 0}
+[41.168328] (-) TimerEvent: {}
+[41.269557] (-) TimerEvent: {}
+[41.372275] (-) TimerEvent: {}
+[41.476143] (-) TimerEvent: {}
+[41.577100] (-) TimerEvent: {}
+[41.678343] (-) TimerEvent: {}
+[41.704383] (fishbot_bringup) JobEnded: {'identifier': 'fishbot_bringup', 'rc': 0}
+[41.712509] (-) EventReactorShutdown: {}

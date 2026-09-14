@@ -1,0 +1,10 @@
+/home/xc/桌面/roscar_nav/build/xcar_bringup/CMakeFiles/uninstall.dir
+/home/xc/桌面/roscar_nav/build/xcar_bringup/CMakeFiles/xcar_bringup_uninstall.dir
+/home/xc/桌面/roscar_nav/build/xcar_bringup/CMakeFiles/odom2tf.dir
+/home/xc/桌面/roscar_nav/build/xcar_bringup/CMakeFiles/test.dir
+/home/xc/桌面/roscar_nav/build/xcar_bringup/CMakeFiles/edit_cache.dir
+/home/xc/桌面/roscar_nav/build/xcar_bringup/CMakeFiles/rebuild_cache.dir
+/home/xc/桌面/roscar_nav/build/xcar_bringup/CMakeFiles/list_install_components.dir
+/home/xc/桌面/roscar_nav/build/xcar_bringup/CMakeFiles/install.dir
+/home/xc/桌面/roscar_nav/build/xcar_bringup/CMakeFiles/install/local.dir
+/home/xc/桌面/roscar_nav/build/xcar_bringup/CMakeFiles/install/strip.dir

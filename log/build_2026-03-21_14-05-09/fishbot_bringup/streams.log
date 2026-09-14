@@ -1,0 +1,10 @@
+[1.354s] Invoking command in '/home/xc/桌面/roscar_nav/build/fishbot_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/fishbot_bringup -- -j4 -l4
+[3.136s] [ 50%] [32mBuilding CXX object CMakeFiles/odom2tf.dir/src/odom2tf.cpp.o[0m
+[17.541s] [01m[K/home/xc/桌面/roscar_nav/src/fishbot_bringup/src/odom2tf.cpp:[m[K In member function ‘[01m[Kvoid OdomTopic2TF::odom_callback_(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[17.542s] [01m[K/home/xc/桌面/roscar_nav/src/fishbot_bringup/src/odom2tf.cpp:26:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Ktransform[m[K’
+[17.542s]    26 |     [01;31m[Ktransform[m[K.transform.translation.x = msg->pose.pose.position.x;
+[17.543s]       |     [01;31m[K^~~~~~~~~[m[K
+[28.718s] gmake[2]: *** [CMakeFiles/odom2tf.dir/build.make:76：CMakeFiles/odom2tf.dir/src/odom2tf.cpp.o] 错误 1
+[28.719s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/odom2tf.dir/all] 错误 2
+[28.720s] gmake: *** [Makefile:146：all] 错误 2
+[28.727s] Invoked command in '/home/xc/桌面/roscar_nav/build/fishbot_bringup' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/fishbot_bringup -- -j4 -l4

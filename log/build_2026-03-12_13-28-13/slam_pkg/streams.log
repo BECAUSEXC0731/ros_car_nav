@@ -1,0 +1,24 @@
+[0.192s] Invoking command in '/home/xc/桌面/roscar_nav/build/slam_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/slam_pkg -- -j4 -l4
+[1.026s] Invoked command in '/home/xc/桌面/roscar_nav/build/slam_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/slam_pkg -- -j4 -l4
+[1.036s] Invoking command in '/home/xc/桌面/roscar_nav/build/slam_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/slam_pkg
+[1.091s] -- Install configuration: ""
+[1.097s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg//launch
+[1.099s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg//launch/slam.launch.py
+[1.099s] -- Installing: /home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg//launch/slam_robot.launch.py
+[1.106s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg//launch/slam_pc.launch.py
+[1.111s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/slam_pkg/share/ament_index/resource_index/package_run_dependencies/slam_pkg
+[1.123s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/slam_pkg/share/ament_index/resource_index/parent_prefix_path/slam_pkg
+[1.124s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/environment/ament_prefix_path.sh
+[1.125s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/environment/ament_prefix_path.dsv
+[1.126s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/environment/path.sh
+[1.127s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/environment/path.dsv
+[1.127s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/local_setup.bash
+[1.128s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/local_setup.sh
+[1.128s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/local_setup.zsh
+[1.130s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/local_setup.dsv
+[1.130s] -- Installing: /home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/package.dsv
+[1.135s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/slam_pkg/share/ament_index/resource_index/packages/slam_pkg
+[1.135s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/cmake/slam_pkgConfig.cmake
+[1.136s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/cmake/slam_pkgConfig-version.cmake
+[1.137s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/package.xml
+[1.584s] Invoked command in '/home/xc/桌面/roscar_nav/build/slam_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/slam_pkg

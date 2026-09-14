@@ -1,0 +1,44 @@
+[0.093s] Invoking command in '/home/xc/桌面/roscar_nav/build/fishbot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/xc/桌面/roscar_nav/src/fishbot_description -DCMAKE_INSTALL_PREFIX=/home/xc/桌面/roscar_nav/install/fishbot_description
+[1.584s] -- The C compiler identification is GNU 11.4.0
+[2.351s] -- The CXX compiler identification is GNU 11.4.0
+[2.421s] -- Detecting C compiler ABI info
+[2.957s] -- Detecting C compiler ABI info - done
+[2.994s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.023s] -- Detecting C compile features
+[3.039s] -- Detecting C compile features - done
+[3.078s] -- Detecting CXX compiler ABI info
+[3.742s] -- Detecting CXX compiler ABI info - done
+[3.779s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.781s] -- Detecting CXX compile features
+[3.793s] -- Detecting CXX compile features - done
+[4.041s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[5.650s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[6.717s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[7.588s] -- Added test 'lint_cmake' to check CMake code style
+[7.612s] -- Added test 'xmllint' to check XML markup files
+[7.639s] -- Configuring done
+[7.676s] -- Generating done
+[7.681s] -- Build files have been written to: /home/xc/桌面/roscar_nav/build/fishbot_description
+[7.730s] Invoked command in '/home/xc/桌面/roscar_nav/build/fishbot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/xc/桌面/roscar_nav/src/fishbot_description -DCMAKE_INSTALL_PREFIX=/home/xc/桌面/roscar_nav/install/fishbot_description
+[7.733s] Invoking command in '/home/xc/桌面/roscar_nav/build/fishbot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/fishbot_description -- -j4 -l4
+[8.045s] Invoked command in '/home/xc/桌面/roscar_nav/build/fishbot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/fishbot_description -- -j4 -l4
+[8.051s] Invoking command in '/home/xc/桌面/roscar_nav/build/fishbot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/fishbot_description
+[8.101s] -- Install configuration: ""
+[8.102s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/urdf
+[8.103s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/urdf/fishbot.urdf
+[8.110s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_description/share/ament_index/resource_index/package_run_dependencies/fishbot_description
+[8.111s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_description/share/ament_index/resource_index/parent_prefix_path/fishbot_description
+[8.115s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/environment/ament_prefix_path.sh
+[8.116s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/environment/ament_prefix_path.dsv
+[8.119s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/environment/path.sh
+[8.121s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/environment/path.dsv
+[8.123s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/local_setup.bash
+[8.123s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/local_setup.sh
+[8.126s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/local_setup.zsh
+[8.127s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/local_setup.dsv
+[8.129s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/package.dsv
+[8.157s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_description/share/ament_index/resource_index/packages/fishbot_description
+[8.186s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/cmake/fishbot_descriptionConfig.cmake
+[8.189s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/cmake/fishbot_descriptionConfig-version.cmake
+[8.189s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/package.xml
+[8.217s] Invoked command in '/home/xc/桌面/roscar_nav/build/fishbot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/fishbot_description

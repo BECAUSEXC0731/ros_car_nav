@@ -1,0 +1,22 @@
+[1.339s] Invoking command in '/home/xc/桌面/roscar_nav/build/fishbot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/fishbot_description -- -j4 -l4
+[2.540s] Invoked command in '/home/xc/桌面/roscar_nav/build/fishbot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/fishbot_description -- -j4 -l4
+[2.658s] Invoking command in '/home/xc/桌面/roscar_nav/build/fishbot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/fishbot_description
+[2.794s] -- Install configuration: ""
+[2.901s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/urdf
+[2.903s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/urdf/fishbot.urdf
+[2.903s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_description/share/ament_index/resource_index/package_run_dependencies/fishbot_description
+[2.904s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_description/share/ament_index/resource_index/parent_prefix_path/fishbot_description
+[2.905s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/environment/ament_prefix_path.sh
+[2.905s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/environment/ament_prefix_path.dsv
+[2.906s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/environment/path.sh
+[2.907s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/environment/path.dsv
+[2.908s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/local_setup.bash
+[2.909s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/local_setup.sh
+[2.909s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/local_setup.zsh
+[2.910s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/local_setup.dsv
+[2.911s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/package.dsv
+[2.916s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_description/share/ament_index/resource_index/packages/fishbot_description
+[2.917s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/cmake/fishbot_descriptionConfig.cmake
+[2.920s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/cmake/fishbot_descriptionConfig-version.cmake
+[2.922s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/package.xml
+[4.746s] Invoked command in '/home/xc/桌面/roscar_nav/build/fishbot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/fishbot_description

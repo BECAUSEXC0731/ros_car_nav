@@ -1,0 +1,329 @@
+[0.642s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.642s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff7f09f8e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff7f208910>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff7f208910>>)
+[1.889s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.890s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.890s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.890s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.890s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.891s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.891s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/xc/桌面/roscar_nav'
+[1.892s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.893s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.894s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.894s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.894s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.895s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.895s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.895s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.895s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.950s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.950s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.950s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.951s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.951s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.951s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.952s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.952s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.952s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.953s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.953s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.954s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.954s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.954s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.954s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.955s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.955s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.955s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.955s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.956s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.956s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.956s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.956s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.956s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.956s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.957s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.957s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.957s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.958s] Level 1:colcon.colcon_core.package_identification:_identify(src/fishbot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[1.958s] Level 1:colcon.colcon_core.package_identification:_identify(src/fishbot_bringup) by extension 'ignore'
+[1.958s] Level 1:colcon.colcon_core.package_identification:_identify(src/fishbot_bringup) by extension 'ignore_ament_install'
+[1.958s] Level 1:colcon.colcon_core.package_identification:_identify(src/fishbot_bringup) by extensions ['colcon_pkg']
+[1.958s] Level 1:colcon.colcon_core.package_identification:_identify(src/fishbot_bringup) by extension 'colcon_pkg'
+[1.959s] Level 1:colcon.colcon_core.package_identification:_identify(src/fishbot_bringup) by extensions ['colcon_meta']
+[1.959s] Level 1:colcon.colcon_core.package_identification:_identify(src/fishbot_bringup) by extension 'colcon_meta'
+[1.959s] Level 1:colcon.colcon_core.package_identification:_identify(src/fishbot_bringup) by extensions ['ros']
+[1.959s] Level 1:colcon.colcon_core.package_identification:_identify(src/fishbot_bringup) by extension 'ros'
+[1.969s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fishbot_bringup' with type 'ros.ament_cmake' and name 'fishbot_bringup'
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(src/fishbot_description) by extensions ['ignore', 'ignore_ament_install']
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(src/fishbot_description) by extension 'ignore'
+[1.970s] Level 1:colcon.colcon_core.package_identification:_identify(src/fishbot_description) by extension 'ignore_ament_install'
+[1.971s] Level 1:colcon.colcon_core.package_identification:_identify(src/fishbot_description) by extensions ['colcon_pkg']
+[1.971s] Level 1:colcon.colcon_core.package_identification:_identify(src/fishbot_description) by extension 'colcon_pkg'
+[1.971s] Level 1:colcon.colcon_core.package_identification:_identify(src/fishbot_description) by extensions ['colcon_meta']
+[1.971s] Level 1:colcon.colcon_core.package_identification:_identify(src/fishbot_description) by extension 'colcon_meta'
+[1.971s] Level 1:colcon.colcon_core.package_identification:_identify(src/fishbot_description) by extensions ['ros']
+[1.972s] Level 1:colcon.colcon_core.package_identification:_identify(src/fishbot_description) by extension 'ros'
+[1.974s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fishbot_description' with type 'ros.ament_cmake' and name 'fishbot_description'
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_pkg_ros2-main) by extensions ['ignore', 'ignore_ament_install']
+[1.975s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_pkg_ros2-main) by extension 'ignore'
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_pkg_ros2-main) by extension 'ignore_ament_install'
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_pkg_ros2-main) by extensions ['colcon_pkg']
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_pkg_ros2-main) by extension 'colcon_pkg'
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_pkg_ros2-main) by extensions ['colcon_meta']
+[1.976s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_pkg_ros2-main) by extension 'colcon_meta'
+[1.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_pkg_ros2-main) by extensions ['ros']
+[1.977s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_pkg_ros2-main) by extension 'ros'
+[1.980s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lidar_pkg_ros2-main' with type 'ros.ament_cmake' and name 'lidar_pkg'
+[1.981s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_pkg) by extensions ['ignore', 'ignore_ament_install']
+[1.981s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_pkg) by extension 'ignore'
+[1.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_pkg) by extension 'ignore_ament_install'
+[1.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_pkg) by extensions ['colcon_pkg']
+[1.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_pkg) by extension 'colcon_pkg'
+[1.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_pkg) by extensions ['colcon_meta']
+[1.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_pkg) by extension 'colcon_meta'
+[1.983s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_pkg) by extensions ['ros']
+[1.983s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam_pkg) by extension 'ros'
+[1.985s] DEBUG:colcon.colcon_core.package_identification:Package 'src/slam_pkg' with type 'ros.ament_cmake' and name 'slam_pkg'
+[1.986s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.986s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.986s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.986s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.986s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.122s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.122s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.138s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/xc/桌面/roscar_nav/install
+[2.149s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 281 installed packages in /opt/ros/humble
+[2.156s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.325s] Level 5:colcon.colcon_core.verb:set package 'fishbot_bringup' build argument 'cmake_args' from command line to 'None'
+[2.325s] Level 5:colcon.colcon_core.verb:set package 'fishbot_bringup' build argument 'cmake_target' from command line to 'None'
+[2.325s] Level 5:colcon.colcon_core.verb:set package 'fishbot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.325s] Level 5:colcon.colcon_core.verb:set package 'fishbot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[2.325s] Level 5:colcon.colcon_core.verb:set package 'fishbot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[2.326s] Level 5:colcon.colcon_core.verb:set package 'fishbot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[2.326s] Level 5:colcon.colcon_core.verb:set package 'fishbot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[2.326s] Level 5:colcon.colcon_core.verb:set package 'fishbot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[2.326s] Level 5:colcon.colcon_core.verb:set package 'fishbot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.326s] DEBUG:colcon.colcon_core.verb:Building package 'fishbot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/xc/桌面/roscar_nav/build/fishbot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/xc/桌面/roscar_nav/install/fishbot_bringup', 'merge_install': False, 'path': '/home/xc/桌面/roscar_nav/src/fishbot_bringup', 'symlink_install': False, 'test_result_base': None}
+[2.328s] Level 5:colcon.colcon_core.verb:set package 'fishbot_description' build argument 'cmake_args' from command line to 'None'
+[2.328s] Level 5:colcon.colcon_core.verb:set package 'fishbot_description' build argument 'cmake_target' from command line to 'None'
+[2.328s] Level 5:colcon.colcon_core.verb:set package 'fishbot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.328s] Level 5:colcon.colcon_core.verb:set package 'fishbot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[2.328s] Level 5:colcon.colcon_core.verb:set package 'fishbot_description' build argument 'cmake_clean_first' from command line to 'False'
+[2.328s] Level 5:colcon.colcon_core.verb:set package 'fishbot_description' build argument 'cmake_force_configure' from command line to 'False'
+[2.328s] Level 5:colcon.colcon_core.verb:set package 'fishbot_description' build argument 'ament_cmake_args' from command line to 'None'
+[2.328s] Level 5:colcon.colcon_core.verb:set package 'fishbot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[2.328s] Level 5:colcon.colcon_core.verb:set package 'fishbot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.329s] DEBUG:colcon.colcon_core.verb:Building package 'fishbot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/xc/桌面/roscar_nav/build/fishbot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/xc/桌面/roscar_nav/install/fishbot_description', 'merge_install': False, 'path': '/home/xc/桌面/roscar_nav/src/fishbot_description', 'symlink_install': False, 'test_result_base': None}
+[2.330s] Level 5:colcon.colcon_core.verb:set package 'lidar_pkg' build argument 'cmake_args' from command line to 'None'
+[2.330s] Level 5:colcon.colcon_core.verb:set package 'lidar_pkg' build argument 'cmake_target' from command line to 'None'
+[2.330s] Level 5:colcon.colcon_core.verb:set package 'lidar_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.330s] Level 5:colcon.colcon_core.verb:set package 'lidar_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[2.330s] Level 5:colcon.colcon_core.verb:set package 'lidar_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[2.331s] Level 5:colcon.colcon_core.verb:set package 'lidar_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[2.331s] Level 5:colcon.colcon_core.verb:set package 'lidar_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[2.331s] Level 5:colcon.colcon_core.verb:set package 'lidar_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[2.331s] Level 5:colcon.colcon_core.verb:set package 'lidar_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.331s] DEBUG:colcon.colcon_core.verb:Building package 'lidar_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/xc/桌面/roscar_nav/build/lidar_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/xc/桌面/roscar_nav/install/lidar_pkg', 'merge_install': False, 'path': '/home/xc/桌面/roscar_nav/src/lidar_pkg_ros2-main', 'symlink_install': False, 'test_result_base': None}
+[2.332s] Level 5:colcon.colcon_core.verb:set package 'slam_pkg' build argument 'cmake_args' from command line to 'None'
+[2.333s] Level 5:colcon.colcon_core.verb:set package 'slam_pkg' build argument 'cmake_target' from command line to 'None'
+[2.333s] Level 5:colcon.colcon_core.verb:set package 'slam_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.333s] Level 5:colcon.colcon_core.verb:set package 'slam_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[2.333s] Level 5:colcon.colcon_core.verb:set package 'slam_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[2.333s] Level 5:colcon.colcon_core.verb:set package 'slam_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[2.333s] Level 5:colcon.colcon_core.verb:set package 'slam_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[2.333s] Level 5:colcon.colcon_core.verb:set package 'slam_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[2.333s] Level 5:colcon.colcon_core.verb:set package 'slam_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.333s] DEBUG:colcon.colcon_core.verb:Building package 'slam_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/xc/桌面/roscar_nav/build/slam_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/xc/桌面/roscar_nav/install/slam_pkg', 'merge_install': False, 'path': '/home/xc/桌面/roscar_nav/src/slam_pkg', 'symlink_install': False, 'test_result_base': None}
+[2.334s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.337s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.338s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/xc/桌面/roscar_nav/src/fishbot_bringup' with build type 'ament_cmake'
+[2.339s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/xc/桌面/roscar_nav/src/fishbot_bringup'
+[2.358s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.359s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.359s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.383s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/xc/桌面/roscar_nav/src/fishbot_description' with build type 'ament_cmake'
+[2.384s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/xc/桌面/roscar_nav/src/fishbot_description'
+[2.385s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.386s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.406s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/xc/桌面/roscar_nav/src/lidar_pkg_ros2-main' with build type 'ament_cmake'
+[2.406s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/xc/桌面/roscar_nav/src/lidar_pkg_ros2-main'
+[2.407s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.408s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.427s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/xc/桌面/roscar_nav/src/slam_pkg' with build type 'ament_cmake'
+[2.428s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/xc/桌面/roscar_nav/src/slam_pkg'
+[2.430s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.430s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.495s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xc/桌面/roscar_nav/build/fishbot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/fishbot_bringup -- -j4 -l4
+[2.524s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xc/桌面/roscar_nav/build/fishbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/fishbot_description -- -j4 -l4
+[2.598s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xc/桌面/roscar_nav/build/lidar_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/lidar_pkg -- -j4 -l4
+[2.645s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xc/桌面/roscar_nav/build/slam_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/slam_pkg -- -j4 -l4
+[3.254s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xc/桌面/roscar_nav/build/slam_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/slam_pkg -- -j4 -l4
+[3.309s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xc/桌面/roscar_nav/build/slam_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/slam_pkg
+[3.311s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xc/桌面/roscar_nav/build/fishbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/fishbot_description -- -j4 -l4
+[3.392s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xc/桌面/roscar_nav/build/fishbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/fishbot_description
+[3.401s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_pkg)
+[3.429s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xc/桌面/roscar_nav/build/slam_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/slam_pkg
+[3.623s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/slam_pkg' for CMake module files
+[3.627s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/slam_pkg' for CMake config files
+[3.699s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_pkg', 'cmake_prefix_path')
+[3.701s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/hook/cmake_prefix_path.ps1'
+[3.719s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/hook/cmake_prefix_path.dsv'
+[3.802s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/hook/cmake_prefix_path.sh'
+[3.815s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/slam_pkg/bin'
+[3.815s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/slam_pkg/lib/pkgconfig/slam_pkg.pc'
+[3.816s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/slam_pkg/lib/python3.10/site-packages'
+[3.818s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/slam_pkg/bin'
+[3.820s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/package.ps1'
+[3.894s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/package.dsv'
+[3.907s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/package.sh'
+[3.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/package.bash'
+[3.995s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/package.zsh'
+[4.073s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xc/桌面/roscar_nav/install/slam_pkg/share/colcon-core/packages/slam_pkg)
+[4.081s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam_pkg)
+[4.083s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/slam_pkg' for CMake module files
+[4.087s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/slam_pkg' for CMake config files
+[4.090s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam_pkg', 'cmake_prefix_path')
+[4.091s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/hook/cmake_prefix_path.ps1'
+[4.094s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/hook/cmake_prefix_path.dsv'
+[4.168s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/hook/cmake_prefix_path.sh'
+[4.174s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/slam_pkg/bin'
+[4.177s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/slam_pkg/lib/pkgconfig/slam_pkg.pc'
+[4.178s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/slam_pkg/lib/python3.10/site-packages'
+[4.181s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/slam_pkg/bin'
+[4.183s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/package.ps1'
+[4.221s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/package.dsv'
+[4.233s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/package.sh'
+[4.238s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/package.bash'
+[4.283s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/slam_pkg/share/slam_pkg/package.zsh'
+[4.291s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xc/桌面/roscar_nav/install/slam_pkg/share/colcon-core/packages/slam_pkg)
+[4.297s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fishbot_description)
+[4.299s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_description' for CMake module files
+[4.304s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xc/桌面/roscar_nav/build/fishbot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/fishbot_description
+[4.305s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_description' for CMake config files
+[4.347s] Level 1:colcon.colcon_core.shell:create_environment_hook('fishbot_description', 'cmake_prefix_path')
+[4.349s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/hook/cmake_prefix_path.ps1'
+[4.356s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/hook/cmake_prefix_path.dsv'
+[4.412s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/hook/cmake_prefix_path.sh'
+[4.420s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_description/bin'
+[4.423s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_description/lib/pkgconfig/fishbot_description.pc'
+[4.425s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_description/lib/python3.10/site-packages'
+[4.428s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_description/bin'
+[4.429s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/package.ps1'
+[4.432s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/package.dsv'
+[4.487s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/package.sh'
+[4.499s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/package.bash'
+[4.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/package.zsh'
+[4.506s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xc/桌面/roscar_nav/install/fishbot_description/share/colcon-core/packages/fishbot_description)
+[4.509s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fishbot_description)
+[4.510s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_description' for CMake module files
+[4.514s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_description' for CMake config files
+[4.570s] Level 1:colcon.colcon_core.shell:create_environment_hook('fishbot_description', 'cmake_prefix_path')
+[4.572s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/hook/cmake_prefix_path.ps1'
+[4.578s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/hook/cmake_prefix_path.dsv'
+[4.586s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/hook/cmake_prefix_path.sh'
+[4.596s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_description/bin'
+[4.670s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_description/lib/pkgconfig/fishbot_description.pc'
+[4.673s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_description/lib/python3.10/site-packages'
+[4.678s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_description/bin'
+[4.679s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/package.ps1'
+[4.687s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/package.dsv'
+[4.694s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/package.sh'
+[4.701s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/package.bash'
+[4.705s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/fishbot_description/share/fishbot_description/package.zsh'
+[4.708s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xc/桌面/roscar_nav/install/fishbot_description/share/colcon-core/packages/fishbot_description)
+[4.793s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xc/桌面/roscar_nav/build/fishbot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/fishbot_bringup -- -j4 -l4
+[4.806s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xc/桌面/roscar_nav/build/fishbot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/fishbot_bringup
+[4.812s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xc/桌面/roscar_nav/build/lidar_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/lidar_pkg -- -j4 -l4
+[4.827s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/xc/桌面/roscar_nav/build/lidar_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/lidar_pkg
+[4.858s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fishbot_bringup)
+[4.859s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_bringup' for CMake module files
+[4.865s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xc/桌面/roscar_nav/build/fishbot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/fishbot_bringup
+[4.870s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_bringup' for CMake config files
+[4.881s] Level 1:colcon.colcon_core.shell:create_environment_hook('fishbot_bringup', 'cmake_prefix_path')
+[4.883s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/hook/cmake_prefix_path.ps1'
+[4.888s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/hook/cmake_prefix_path.dsv'
+[4.916s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/hook/cmake_prefix_path.sh'
+[4.920s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_bringup/lib'
+[4.922s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_bringup/bin'
+[4.923s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_bringup/lib/pkgconfig/fishbot_bringup.pc'
+[4.925s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_bringup/lib/python3.10/site-packages'
+[4.928s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_bringup/bin'
+[4.930s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/package.ps1'
+[4.933s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/package.dsv'
+[4.936s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/package.sh'
+[4.938s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/package.bash'
+[4.940s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/package.zsh'
+[4.943s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xc/桌面/roscar_nav/install/fishbot_bringup/share/colcon-core/packages/fishbot_bringup)
+[4.946s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fishbot_bringup)
+[4.947s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_bringup' for CMake module files
+[4.950s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_bringup' for CMake config files
+[4.952s] Level 1:colcon.colcon_core.shell:create_environment_hook('fishbot_bringup', 'cmake_prefix_path')
+[4.953s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/hook/cmake_prefix_path.ps1'
+[4.956s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/hook/cmake_prefix_path.dsv'
+[4.958s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/hook/cmake_prefix_path.sh'
+[4.962s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_bringup/lib'
+[4.962s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_bringup/bin'
+[4.963s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_bringup/lib/pkgconfig/fishbot_bringup.pc'
+[4.964s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_bringup/lib/python3.10/site-packages'
+[4.966s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/fishbot_bringup/bin'
+[4.967s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/package.ps1'
+[4.970s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/package.dsv'
+[4.973s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/package.sh'
+[4.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/package.bash'
+[4.980s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/package.zsh'
+[4.983s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xc/桌面/roscar_nav/install/fishbot_bringup/share/colcon-core/packages/fishbot_bringup)
+[4.988s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lidar_pkg)
+[4.990s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/lidar_pkg' for CMake module files
+[4.994s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/xc/桌面/roscar_nav/build/lidar_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/lidar_pkg
+[4.997s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/lidar_pkg' for CMake config files
+[4.999s] Level 1:colcon.colcon_core.shell:create_environment_hook('lidar_pkg', 'cmake_prefix_path')
+[5.001s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/hook/cmake_prefix_path.ps1'
+[5.003s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/hook/cmake_prefix_path.dsv'
+[5.005s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/hook/cmake_prefix_path.sh'
+[5.009s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/lidar_pkg/lib'
+[5.009s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/lidar_pkg/bin'
+[5.010s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/lidar_pkg/lib/pkgconfig/lidar_pkg.pc'
+[5.011s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/lidar_pkg/lib/python3.10/site-packages'
+[5.014s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/lidar_pkg/bin'
+[5.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/package.ps1'
+[5.019s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/package.dsv'
+[5.050s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/package.sh'
+[5.052s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/package.bash'
+[5.055s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/package.zsh'
+[5.057s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xc/桌面/roscar_nav/install/lidar_pkg/share/colcon-core/packages/lidar_pkg)
+[5.061s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lidar_pkg)
+[5.062s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/lidar_pkg' for CMake module files
+[5.066s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/lidar_pkg' for CMake config files
+[5.068s] Level 1:colcon.colcon_core.shell:create_environment_hook('lidar_pkg', 'cmake_prefix_path')
+[5.069s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/hook/cmake_prefix_path.ps1'
+[5.072s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/hook/cmake_prefix_path.dsv'
+[5.075s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/hook/cmake_prefix_path.sh'
+[5.078s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/lidar_pkg/lib'
+[5.079s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/lidar_pkg/bin'
+[5.079s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/lidar_pkg/lib/pkgconfig/lidar_pkg.pc'
+[5.080s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/lidar_pkg/lib/python3.10/site-packages'
+[5.082s] Level 1:colcon.colcon_core.environment:checking '/home/xc/桌面/roscar_nav/install/lidar_pkg/bin'
+[5.084s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/package.ps1'
+[5.087s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/package.dsv'
+[5.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/package.sh'
+[5.092s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/package.bash'
+[5.095s] INFO:colcon.colcon_core.shell:Creating package script '/home/xc/桌面/roscar_nav/install/lidar_pkg/share/lidar_pkg/package.zsh'
+[5.098s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/xc/桌面/roscar_nav/install/lidar_pkg/share/colcon-core/packages/lidar_pkg)
+[5.101s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.103s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.103s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.104s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.136s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.137s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.137s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.196s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.197s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/xc/桌面/roscar_nav/install/local_setup.ps1'
+[5.204s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/xc/桌面/roscar_nav/install/_local_setup_util_ps1.py'
+[5.214s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/xc/桌面/roscar_nav/install/setup.ps1'
+[5.222s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/xc/桌面/roscar_nav/install/local_setup.sh'
+[5.227s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/xc/桌面/roscar_nav/install/_local_setup_util_sh.py'
+[5.231s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/xc/桌面/roscar_nav/install/setup.sh'
+[5.239s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/xc/桌面/roscar_nav/install/local_setup.bash'
+[5.301s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/xc/桌面/roscar_nav/install/setup.bash'
+[5.310s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/xc/桌面/roscar_nav/install/local_setup.zsh'
+[5.316s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/xc/桌面/roscar_nav/install/setup.zsh'

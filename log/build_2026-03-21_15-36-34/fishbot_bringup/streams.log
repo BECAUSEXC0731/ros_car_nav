@@ -1,0 +1,26 @@
+[0.154s] Invoking command in '/home/xc/桌面/roscar_nav/build/fishbot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/fishbot_bringup -- -j4 -l4
+[2.409s] [100%] Built target odom2tf
+[2.452s] Invoked command in '/home/xc/桌面/roscar_nav/build/fishbot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/fishbot_bringup -- -j4 -l4
+[2.465s] Invoking command in '/home/xc/桌面/roscar_nav/build/fishbot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/fishbot_bringup
+[2.496s] -- Install configuration: ""
+[2.498s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_bringup/lib/fishbot_bringup/odom2tf
+[2.500s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/launch
+[2.501s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/launch/urdf2tf.launch.py
+[2.502s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/launch/bringup.launch.py
+[2.503s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/launch/bringup_quick.launch.py
+[2.504s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/ament_index/resource_index/package_run_dependencies/fishbot_bringup
+[2.505s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/ament_index/resource_index/parent_prefix_path/fishbot_bringup
+[2.506s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/environment/ament_prefix_path.sh
+[2.507s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/environment/ament_prefix_path.dsv
+[2.507s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/environment/path.sh
+[2.509s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/environment/path.dsv
+[2.510s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/local_setup.bash
+[2.511s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/local_setup.sh
+[2.512s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/local_setup.zsh
+[2.513s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/local_setup.dsv
+[2.515s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/package.dsv
+[2.516s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/ament_index/resource_index/packages/fishbot_bringup
+[2.518s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/cmake/fishbot_bringupConfig.cmake
+[2.522s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/cmake/fishbot_bringupConfig-version.cmake
+[2.523s] -- Up-to-date: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/package.xml
+[2.525s] Invoked command in '/home/xc/桌面/roscar_nav/build/fishbot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/fishbot_bringup

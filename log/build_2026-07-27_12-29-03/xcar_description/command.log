@@ -1,0 +1,6 @@
+Invoking command in '/home/xc/桌面/roscar_nav/build/xcar_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/xc/桌面/roscar_nav/src/xcar_description -DCMAKE_INSTALL_PREFIX=/home/xc/桌面/roscar_nav/install/xcar_description
+Invoked command in '/home/xc/桌面/roscar_nav/build/xcar_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/xc/桌面/roscar_nav/src/xcar_description -DCMAKE_INSTALL_PREFIX=/home/xc/桌面/roscar_nav/install/xcar_description
+Invoking command in '/home/xc/桌面/roscar_nav/build/xcar_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/xcar_description -- -j4 -l4
+Invoked command in '/home/xc/桌面/roscar_nav/build/xcar_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/xcar_description -- -j4 -l4
+Invoking command in '/home/xc/桌面/roscar_nav/build/xcar_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/xcar_description
+Invoked command in '/home/xc/桌面/roscar_nav/build/xcar_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/xcar_description

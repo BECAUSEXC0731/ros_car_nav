@@ -1,0 +1,77 @@
+[0.102s] Invoking command in '/home/xc/桌面/roscar_nav/build/fishbot_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/xc/桌面/roscar_nav/src/fishbot_bringup -DCMAKE_INSTALL_PREFIX=/home/xc/桌面/roscar_nav/install/fishbot_bringup
+[1.614s] -- The C compiler identification is GNU 11.4.0
+[2.369s] -- The CXX compiler identification is GNU 11.4.0
+[2.454s] -- Detecting C compiler ABI info
+[3.147s] -- Detecting C compiler ABI info - done
+[3.180s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.182s] -- Detecting C compile features
+[3.189s] -- Detecting C compile features - done
+[3.209s] -- Detecting CXX compiler ABI info
+[3.871s] -- Detecting CXX compiler ABI info - done
+[3.904s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.904s] -- Detecting CXX compile features
+[3.904s] -- Detecting CXX compile features - done
+[4.069s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[5.686s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[6.675s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[7.501s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[7.955s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[8.008s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[8.100s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[8.250s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.410s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.920s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[9.949s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[10.779s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[11.058s] -- Found FastRTPS: /opt/ros/humble/include  
+[11.497s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[11.633s] -- Looking for pthread.h
+[12.053s] -- Looking for pthread.h - found
+[12.054s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[12.582s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[12.598s] -- Found Threads: TRUE  
+[14.295s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[14.677s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[15.979s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[16.112s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[16.113s] -- Configured cppcheck include dirs: 
+[16.113s] -- Configured cppcheck exclude dirs and/or files: 
+[16.118s] -- Added test 'flake8' to check Python code syntax and style conventions
+[16.119s] -- Added test 'lint_cmake' to check CMake code style
+[16.122s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[16.129s] -- Added test 'uncrustify' to check C / C++ code style
+[16.130s] -- Configured uncrustify additional arguments: 
+[16.134s] -- Added test 'xmllint' to check XML markup files
+[16.141s] -- Configuring done
+[16.218s] -- Generating done
+[16.242s] -- Build files have been written to: /home/xc/桌面/roscar_nav/build/fishbot_bringup
+[16.295s] Invoked command in '/home/xc/桌面/roscar_nav/build/fishbot_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/xc/桌面/roscar_nav/src/fishbot_bringup -DCMAKE_INSTALL_PREFIX=/home/xc/桌面/roscar_nav/install/fishbot_bringup
+[16.306s] Invoking command in '/home/xc/桌面/roscar_nav/build/fishbot_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/fishbot_bringup -- -j4 -l4
+[16.553s] [ 50%] [32mBuilding CXX object CMakeFiles/odom2tf.dir/src/odom2tf.cpp.o[0m
+[60.711s] [100%] [32m[1mLinking CXX executable odom2tf[0m
+[63.163s] [100%] Built target odom2tf
+[63.245s] Invoked command in '/home/xc/桌面/roscar_nav/build/fishbot_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xc/桌面/roscar_nav/build/fishbot_bringup -- -j4 -l4
+[63.248s] Invoking command in '/home/xc/桌面/roscar_nav/build/fishbot_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/fishbot_bringup
+[63.249s] -- Install configuration: ""
+[63.249s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_bringup/lib/fishbot_bringup/odom2tf
+[63.273s] -- Set runtime path of "/home/xc/桌面/roscar_nav/install/fishbot_bringup/lib/fishbot_bringup/odom2tf" to ""
+[63.274s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/launch
+[63.325s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/launch/urdf2tf.launch.py
+[63.328s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/launch/bringup.launch.py
+[63.331s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/launch/bringup_quick.launch.py
+[63.334s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/ament_index/resource_index/package_run_dependencies/fishbot_bringup
+[63.337s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/ament_index/resource_index/parent_prefix_path/fishbot_bringup
+[63.339s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/environment/ament_prefix_path.sh
+[63.340s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/environment/ament_prefix_path.dsv
+[63.342s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/environment/path.sh
+[63.343s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/environment/path.dsv
+[63.345s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/local_setup.bash
+[63.346s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/local_setup.sh
+[63.348s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/local_setup.zsh
+[63.349s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/local_setup.dsv
+[63.351s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/package.dsv
+[63.353s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/ament_index/resource_index/packages/fishbot_bringup
+[63.355s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/cmake/fishbot_bringupConfig.cmake
+[63.356s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/cmake/fishbot_bringupConfig-version.cmake
+[63.358s] -- Installing: /home/xc/桌面/roscar_nav/install/fishbot_bringup/share/fishbot_bringup/package.xml
+[63.370s] Invoked command in '/home/xc/桌面/roscar_nav/build/fishbot_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/xc/桌面/roscar_nav/build/fishbot_bringup
