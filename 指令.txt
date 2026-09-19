@@ -1,0 +1,66 @@
+================ Xcar 小车常用命令速查 ================
+
+【每次使用前】
+cd ~/roscar_nav_last
+source install/setup.bash
+
+------------------------------ 建图 ------------------------------
+# 建图（带 RViz）
+ros2 launch slam_pkg slam.launch.py
+
+# 建图（不带 RViz，省 CPU）
+ros2 launch slam_pkg slam_robot.launch.py
+
+# 另开一个终端遥控小车转一圈
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+
+# 存图（直接存进导航包，之后要重新编译一次）
+ros2 run nav2_map_server map_saver_cli -f src/xcar_nav/maps/qinshi
+colcon build --packages-select xcar_nav
+
+------------------------------ 导航 ------------------------------
+ros2 launch xcar_nav navigation.launch.py
+
+# 然后在 RViz 里：
+#   1) 2D Pose Estimate  → 点小车现在的实际位置和朝向（修正定位）
+#   2) 2D Goal Pose      → 点目标位置，小车开始自动导航
+
+# 无显示器 / 无 RViz 时
+ros2 launch xcar_nav navigation.launch.py use_rviz:=false
+
+# 命令行直接下目标点（示例：走到 x=0.5, y=0.0，朝 +x 方向）
+ros2 action send_goal /navigate_to_pose nav2_msgs/action/NavigateToPose \
+  "{pose: {header: {frame_id: map}, pose: {position: {x: 0.5, y: 0.0, z: 0.0}, orientation: {w: 1.0}}}}"
+
+------------------------ 只看模型 / 验证 TF ------------------------
+# 只看机器人模型
+ros2 launch xcar_description display.launch.py
+
+# 机器人本体（URDF + EKF），不建图不导航
+ros2 launch xcar_bringup robot_base.launch.py
+
+# 降级模式：下位机没有 IMU 时，只用 /odom 转 TF
+ros2 launch xcar_bringup robot_base.launch.py use_ekf:=false
+
+------------------------------ 排查 ------------------------------
+ros2 topic hz /scan                    # 雷达
+ros2 topic hz /odom                    # 里程计
+ros2 topic hz /imu                     # IMU
+ros2 topic echo /cmd_vel               # 导航/遥控发给下位机的速度指令
+ros2 run tf2_tools view_frames         # 导出 TF 树 PDF
+ros2 run tf2_ros tf2_echo map base_footprint
+ros2 lifecycle get /planner_server     # 导航节点是否激活（active [3] 为正常）
+
+# 出问题时录一段包，方便复盘
+ros2 bag record /scan /odom /imu /tf /tf_static /cmd_vel
+
+------------------------------ 编译 ------------------------------
+cd ~/roscar_nav_last
+colcon build
+source install/setup.bash
+
+# 只编某个包
+colcon build --packages-select xcar_nav
+
+# 首次安装导航依赖
+sudo apt install ros-humble-navigation2 ros-humble-nav2-bringup

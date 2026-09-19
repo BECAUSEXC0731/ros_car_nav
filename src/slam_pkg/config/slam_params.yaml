@@ -1,0 +1,35 @@
+# slam_toolbox 建图参数（全工程唯一一份，slam_robot.launch.py / slam.launch.py 共用）
+# 参数针对"小场地 + 小底盘 + 慢速"调过：阈值比默认小很多，
+# 车稍微动一点就加一个节点，地图更新也更快，避免转半天地图还是空的。
+slam_toolbox:
+  ros__parameters:
+    use_sim_time: false
+
+    # ---- 坐标系与话题 ----
+    base_frame: base_footprint
+    odom_frame: odom
+    map_frame: map
+    scan_topic: /scan
+    mode: mapping
+
+    # ---- 建图节奏（默认 5.0 / 0.5 / 0.5，这里大幅调小）----
+    map_update_interval: 0.5        # 地图更新间隔 [s]
+    resolution: 0.05                # 栅格分辨率 [m]
+    max_laser_range: 8.0            # 与 /scan 的 range_max 对齐
+    minimum_time_interval: 0.1      # 处理扫描的最小时间间隔 [s]
+    minimum_travel_distance: 0.1    # 走 10cm 就加节点 [m]
+    minimum_travel_heading: 0.05    # 转 2.9° 就加节点 [rad]
+    transform_publish_period: 0.05  # map->odom TF 发布周期 [s]
+
+    # ---- 闭环检测 ----
+    do_loop_closing: true
+    loop_match_minimum_chain_size: 10
+    loop_match_maximum_variance_coarse: 3.0
+
+    # ---- 扫描匹配器 ----
+    solver_plugin: solver_plugins::CeresSolver
+    ceres_linear_solver: SPARSE_NORMAL_CHOLESKY
+    ceres_preconditioner: JACOBI
+    ceres_trust_strategy: LEVENBERG_MARQUARDT
+    ceres_dogleg_type: TRADITIONAL_DOGLEG
+    ceres_loss_function: None

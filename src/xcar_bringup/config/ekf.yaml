@@ -1,0 +1,78 @@
+# robot_localization EKF 配置
+# ---------------------------------------------------------------------------
+# 输入：轮式里程计 /odom（绝对位姿，做长期参照）
+#       IMU /imu_rotated（只取角速度 vyaw，做短时平滑）
+# 输出：融合后的 odom -> base_footprint TF  +  /odom/filtered 话题
+#
+# 设计要点（小车是差速底盘 + 便宜 MPU，两者单独用都不行）：
+#   - 里程计 x/y/yaw：不会随时间漂移，但原地打滑时 yaw 会突跳
+#   - IMU vyaw     ：短时准、平滑，但长时间积分会漂
+#   - 只用 IMU 的角速度，不用它的绝对姿态（roll/pitch/yaw）：
+#     两个"绝对航向"同时喂给 EKF 会互相拉扯，让 IMU 只出角速度最稳
+#   - 最终残差由 slam_toolbox / AMCL 的扫描匹配（map->odom）纠正
+# ---------------------------------------------------------------------------
+ekf_node:
+  ros__parameters:
+    frequency: 20.0
+    sensor_timeout: 0.2
+    two_d_mode: true          # 地面机器人：z / roll / pitch 及其速度一律忽略
+
+    # 坐标系
+    map_frame: map
+    odom_frame: odom
+    base_link_frame: base_footprint   # 本车 URDF 的根是 base_footprint
+    world_frame: odom
+
+    publish_tf: true          # 发布 odom -> base_footprint
+    publish_acceleration: false
+    print_diagnostics: true   # 把融合状态发到 /diagnostics，便于排查
+
+    # ===== 输入 1：轮式里程计 /odom =====
+    # 配置顺序: [x, y, z, roll, pitch, yaw, vx, vy, vz, vroll, vpitch, vyaw, ax, ay, az]
+    odom0: /odom
+    odom0_config: [true,  true,  false,    # x, y（平移，长期稳定）
+                   false, false, true,     # yaw（长期航向参照）
+                   false, false, false,
+                   false, false, false,
+                   false, false, false]
+    odom0_queue_size: 10
+    odom0_nodelay: true
+    odom0_differential: false
+    odom0_relative: false
+    # 异常值剔除（马氏距离）：下位机位姿突跳时不让它污染滤波器
+    # 注意：只有 /odom 的 covariance 非 0 时才生效
+    odom0_pose_rejection_threshold: 2.0
+
+    # ===== 输入 2：IMU /imu_rotated =====
+    # 只使用 vyaw（绕 z 轴的角速度），其余全部关闭：
+    #   - roll/pitch/yaw 姿态在 two_d_mode 下本来就会被忽略
+    #   - 加速度计不使用，因此也不需要 remove_gravitational_acceleration
+    imu0: /imu_rotated
+    imu0_config: [false, false, false,
+                  false, false, false,
+                  false, false, false,
+                  false, false, true,     # vyaw
+                  false, false, false]
+    imu0_queue_size: 10
+    imu0_nodelay: true
+    imu0_differential: false
+    imu0_relative: false
+    imu0_twist_rejection_threshold: 5.0
+
+    # ===== 过程噪声（15x15 对角阵，决定滤波器多信任运动模型）=====
+    # 顺序: [x, y, z, roll, pitch, yaw, vx, vy, vz, vroll, vpitch, vyaw, ax, ay, az]
+    process_noise_covariance: [0.05, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                               0.0, 0.05, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                               0.0, 0.0, 0.06, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                               0.0, 0.0, 0.0, 0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                               0.0, 0.0, 0.0, 0.0, 0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                               0.0, 0.0, 0.0, 0.0, 0.0, 0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                               0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.025, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                               0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.025, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                               0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.04, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                               0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.01, 0.0, 0.0, 0.0, 0.0, 0.0,
+                               0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.01, 0.0, 0.0, 0.0, 0.0,
+                               0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.01, 0.0, 0.0, 0.0,
+                               0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.01, 0.0, 0.0,
+                               0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.01, 0.0,
+                               0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.01]
