@@ -38,7 +38,7 @@ def generate_launch_description():
 
     declare_map = DeclareLaunchArgument(
         'map',
-        default_value=os.path.join(nav_dir, 'maps', 'qinshi.yaml'),
+        default_value=os.path.join(nav_dir, 'maps', 'square.yaml'),
         description='地图 yaml 的绝对路径')
     declare_params = DeclareLaunchArgument(
         'params_file',

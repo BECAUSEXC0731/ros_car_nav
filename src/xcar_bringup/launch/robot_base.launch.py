@@ -40,7 +40,18 @@ def generate_launch_description():
         output='screen',
         condition=IfCondition(use_ekf))
 
-    # 2b. EKF：融合 /odom + /imu_rotated，发布 odom -> base_footprint
+    # 2b. /odom 协方差修正：信平移、不信编码器 yaw
+    #     原地旋转打滑时编码器 yaw 会累积偏差，而其协方差全 0 等于"无限信任"，
+    #     EKF 的航向会被拖偏。这里把 yaw 方差放大后另发一份 /odom_cov 给 EKF，
+    #     原始 /odom 不动，其它节点（Nav2 等）照常用。
+    odom_cov_repub = Node(
+        package='xcar_bringup',
+        executable='odom_cov_repub.py',
+        name='odom_cov_repub',
+        output='screen',
+        condition=IfCondition(use_ekf))
+
+    # 2c. EKF：融合 /odom_cov + /imu_rotated，发布 odom -> base_footprint
     ekf_node = Node(
         package='robot_localization',
         executable='ekf_node',
@@ -50,7 +61,7 @@ def generate_launch_description():
         remappings=[('odometry/filtered', 'odom/filtered')],
         condition=IfCondition(use_ekf))
 
-    # 2c. 降级方案：直接把 /odom 转成 TF（不要与 EKF 同时运行）
+    # 2d. 降级方案：直接把 /odom 转成 TF（不要与 EKF 同时运行）
     odom2tf = Node(
         package='xcar_bringup',
         executable='odom2tf',
@@ -62,6 +73,7 @@ def generate_launch_description():
         declare_use_ekf,
         urdf2tf,
         imu_repub,
+        odom_cov_repub,
         ekf_node,
         odom2tf,
     ])

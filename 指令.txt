@@ -44,12 +44,18 @@ ros2 launch xcar_bringup robot_base.launch.py use_ekf:=false
 
 ------------------------------ 排查 ------------------------------
 ros2 topic hz /scan                    # 雷达
-ros2 topic hz /odom                    # 里程计
+ros2 topic hz /odom                    # 里程计（下位机原始输出）
+ros2 topic hz /odom_cov                # EKF 实际用的里程计（协方差已修正）
 ros2 topic hz /imu                     # IMU
 ros2 topic echo /cmd_vel               # 导航/遥控发给下位机的速度指令
 ros2 run tf2_tools view_frames         # 导出 TF 树 PDF
 ros2 run tf2_ros tf2_echo map base_footprint
 ros2 lifecycle get /planner_server     # 导航节点是否激活（active [3] 为正常）
+
+# 原地旋转打滑诊断：陀螺实测角速度 vs 编码器推算角速度（原地转着看）
+ros2 topic echo /imu  --field angular_velocity.z
+ros2 topic echo /odom --field twist.twist.angular.z
+ros2 topic echo /odom --field pose.covariance --once   # 下位机给的协方差是否全 0
 
 # 出问题时录一段包，方便复盘
 ros2 bag record /scan /odom /imu /tf /tf_static /cmd_vel

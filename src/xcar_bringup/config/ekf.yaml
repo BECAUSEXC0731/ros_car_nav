@@ -1,12 +1,15 @@
 # robot_localization EKF 配置
 # ---------------------------------------------------------------------------
-# 输入：轮式里程计 /odom（绝对位姿，做长期参照）
+# 输入：轮式里程计 /odom_cov（由 odom_cov_repub.py 转发，信平移、不信 yaw）
 #       IMU /imu_rotated（只取角速度 vyaw，做短时平滑）
 # 输出：融合后的 odom -> base_footprint TF  +  /odom/filtered 话题
 #
 # 设计要点（小车是差速底盘 + 便宜 MPU，两者单独用都不行）：
-#   - 里程计 x/y/yaw：不会随时间漂移，但原地打滑时 yaw 会突跳
-#   - IMU vyaw     ：短时准、平滑，但长时间积分会漂
+#   - 里程计 x/y  ：不会随时间漂移，且原地旋转打滑几乎不影响它
+#   - 里程计 yaw  ：不打滑时准，但原地旋转打滑时会累积偏差
+#                   → 用 odom_cov_repub.py 把它的方差放大来降权
+#   - IMU vyaw     ：短时准、平滑，且不受轮子打滑影响
+#                   → 旋转的瞬时航向由它主导
 #   - 只用 IMU 的角速度，不用它的绝对姿态（roll/pitch/yaw）：
 #     两个"绝对航向"同时喂给 EKF 会互相拉扯，让 IMU 只出角速度最稳
 #   - 最终残差由 slam_toolbox / AMCL 的扫描匹配（map->odom）纠正
@@ -27,11 +30,15 @@ ekf_node:
     publish_acceleration: false
     print_diagnostics: true   # 把融合状态发到 /diagnostics，便于排查
 
-    # ===== 输入 1：轮式里程计 /odom =====
+    # ===== 输入 1：轮式里程计 /odom_cov（odom_cov_repub.py 转发而来）=====
+    # 为什么不用原始 /odom：原地旋转打滑时编码器 yaw 会累积偏差，
+    # 而下位机给的协方差是全 0（等于"无限信任"）→ 旋转时航向被一路拖偏。
+    # 转发节点把 x/y 方差设小、yaw 方差设大（默认 5.0 rad^2），
+    # 于是 x/y 仍然高度可信，yaw 的瞬时值交给 IMU 的 vyaw 主导。
     # 配置顺序: [x, y, z, roll, pitch, yaw, vx, vy, vz, vroll, vpitch, vyaw, ax, ay, az]
-    odom0: /odom
+    odom0: /odom_cov
     odom0_config: [true,  true,  false,    # x, y（平移，长期稳定）
-                   false, false, true,     # yaw（长期航向参照）
+                   false, false, true,     # yaw（权重已由协方差压得很低）
                    false, false, false,
                    false, false, false,
                    false, false, false]
@@ -40,8 +47,11 @@ ekf_node:
     odom0_differential: false
     odom0_relative: false
     # 异常值剔除（马氏距离）：下位机位姿突跳时不让它污染滤波器
-    # 注意：只有 /odom 的 covariance 非 0 时才生效
-    odom0_pose_rejection_threshold: 2.0
+    # 注意：只有 covariance 非 0 时才生效。改用 /odom_cov 后它才真正起作用，
+    # 因此这里恢复 robot_localization 的默认值 10.0。
+    # （原来写 2.0 是因为协方差全 0、这个阈值根本没被用上；
+    #   阈值太小会误剔正常数据，反而让滤波器断续丢测量）
+    odom0_pose_rejection_threshold: 10.0
 
     # ===== 输入 2：IMU /imu_rotated =====
     # 只使用 vyaw（绕 z 轴的角速度），其余全部关闭：

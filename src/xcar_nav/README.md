@@ -1,4 +1,5 @@
 # xcar_nav —— Nav2 自主导航包
+ros2 run nav2_map_server map_saver_cli -f ~/roscar_nav_last/src/xcar_nav/maps/square
 
 在**已保存的地图**上做自主导航：AMCL 定位 + 全局/局部路径规划 + 速度控制。
 

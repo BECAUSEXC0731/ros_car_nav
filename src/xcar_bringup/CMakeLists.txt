@@ -26,9 +26,11 @@ install(DIRECTORY
   DESTINATION share/${PROJECT_NAME}
 )
 
-# 让 imu_repub.py 可以作为 ros2 run xcar_bringup imu_repub.py 执行
+# 让 imu_repub.py / odom_cov_repub.py 可以作为
+# ros2 run xcar_bringup <脚本名> 执行
 install(PROGRAMS
   scripts/imu_repub.py
+  scripts/odom_cov_repub.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
