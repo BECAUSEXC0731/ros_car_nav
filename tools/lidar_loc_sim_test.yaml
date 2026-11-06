@@ -1,0 +1,32 @@
+lidar_loc:
+  ros__parameters:
+    use_sim_time: False
+    base_frame: base_footprint
+    odom_frame: odom
+    global_frame: map
+    laser_frame: laser_frame
+    scan_topic: laser_sim
+    map_topic: map
+    pose_topic: amcl_pose
+    publish_tf: True
+    tf_rate: 30.0
+    set_initial_pose: True
+    initial_pose:
+      x: 2.35
+      y: -0.62
+      yaw: 0.17
+    global_relocalize: False
+    field_sigma: 0.30
+    gradient_radius: 1.0
+    search_step_ratio: 1.0
+    yaw_step_deg: 1.0
+    refine_ratio: 0.2
+    refine_iterations: 40
+    max_iterations: 400
+    min_quality: 0.15
+    min_points: 40
+    max_correction_trans: 0.5
+    max_correction_rot: 0.4
+    smoothing_alpha: 0.5
+    max_scan_points: 360
+    log_period: 2.0

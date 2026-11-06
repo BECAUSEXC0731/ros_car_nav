@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>xcar_jiguang</name>
+  <version>0.1.0</version>
+  <description>
+    纯激光地图匹配定位（替代 AMCL）：在静态栅格地图上构建"到最近障碍物距离"的
+    梯度场，对每一帧激光做爬山式位姿搜索，直接输出 map 坐标系下的绝对位姿，
+    并发布 map->odom TF。移植自 jie_ware/lidar_loc（ROS1 catkin）到 ROS2 Humble。
+  </description>
+  <maintainer email="xuchang@example.com">xuchang</maintainer>
+  <license>GPL</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>nav2_msgs</depend>
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>libopencv-dev</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

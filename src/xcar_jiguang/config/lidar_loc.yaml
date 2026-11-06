@@ -1,0 +1,69 @@
+ 
+ 
+lidar_loc:
+  ros__parameters:
+    use_sim_time: False                  
+
+    # ---------------- 坐标系与话题 ----------------
+    base_frame: base_footprint           # 机器人基座（与 EKF/URDF 一致）
+    odom_frame: odom                     # 里程计系；map->odom 由本节点发布
+    global_frame: map                    # 全局（地图）系
+    laser_frame: laser_frame             # 激光系；留空 "" 则用 scan.header.frame_id
+    scan_topic: scan_ts                  # 与 AMCL/代价地图一致，用重打戳后的激光
+    scan_cloud_topic: scan_cloud         # 去畸变点云（scan_deskew 输出，激光系）
+    use_deskewed_scan: True              # True=用去畸变点云匹配（移动时抖动更小）；False=用 /scan_ts
+    map_topic: map                       # nav2_map_server 发布的静态地图
+    pose_topic: amcl_pose                # 位姿输出（RViz Pose 显示用，替代 AMCL 的同名话题）
+    publish_tf: True                     # 是否发布 map->odom（关掉就没有全局定位输出）
+    tf_rate: 30.0                        # map->odom 发布频率(Hz)
+
+    # ---------------- 初始位姿 ----------------
+    # 有初始位姿才会发布 map->odom（否则 map 帧不存在，代价地图起不来）。
+    # 实车每回停放位置不同的话，改 False，然后每次启动在 RViz 里点 "2D Pose Estimate"。
+    set_initial_pose: True
+    initial_pose:
+      x: 0.0                             # map 坐标系下的 x（米）
+      y: 0.0                             # map 坐标系下的 y（米）
+      yaw: 0.0                           # 朝向（弧度，0 = +x 方向）
+
+    # ---------------- 粗搜索全局重定位 ----------------
+    # 只在"没有任何先验位姿"时执行一次：在地图上按 0.30m × 15° 枚举，
+    # 取渐变场得分最高的位置作为初始位姿，之后交给逐帧爬山跟踪。
+    # shiyan.pgm(123x107) 大约 5~15ms，qinshi.pgm(157x229) 约 20~50ms，只跑一次。
+    global_relocalize: True
+    global_search_step: 0.30             # 粗搜索平移步长(米)
+    global_yaw_step: 0.2618              # 粗搜索朝向步长(弧度)，0.2618 = 15°
+    global_max_points: 120               # 粗搜索时最多用多少个激光点（抽样，省时间）
+    global_candidates: 5                 # 粗搜索后取前 K 个互不相近的候选做完整爬山复核
+                                         # 对称房间里 180° 镜像解经常只差零点几 %，多复核几个更稳
+    ambiguity_tolerance: 0.01            # 最优与次优候选得分差小于此值时，打印"存在歧义"告警
+                                         # （说明房间近似对称，建议改用 RViz 手工给初值）
+
+    # ---------------- 匹配器 ----------------
+    # 评分场：field = 255*exp(-d²/(2σ²))，d = 激光点到最近障碍的距离。
+    # σ 太小 → 稍微一动就掉分、容易跟丢；σ 太大 → 得分面变平，静止时位姿来回跳。
+    field_sigma: 0.30                    # 高斯似然场标准差(米)，0.25~0.40 比较合适
+    gradient_radius: 1.0                 # 距离超过该值(米)记 0 分（同时决定地图裁剪余量）
+    search_step_ratio: 1.0               # 粗搜索步长 = resolution * ratio（1.0 → 5cm）
+    yaw_step_deg: 1.0                    # 粗搜索朝向步长(度)
+    refine_ratio: 0.2                    # 精修步长比例（0.2 → 1cm / 0.2°），消除量化抖动
+    refine_iterations: 40                # 精修最多迭代次数
+    max_iterations: 400                  # 粗搜索最多迭代次数（安全上限）
+    min_quality: 0.15                    # 匹配质量门槛：得分/(255*点数)，低于它就不更新位姿
+    min_points: 40                       # 本帧有效激光点少于该值直接忽略（防垃圾帧）
+    max_correction_trans: 0.5            # 单帧修正量上限(米，相对里程计预测)，超过判为发散
+    max_correction_rot: 0.4              # 单帧修正量上限(弧度，约 23°)
+    smoothing_alpha: 0.5                 # 每次只采纳 alpha 倍的匹配修正（1.0 = 不平滑）
+                                         # 0.3~0.6 能明显压掉抖动且几乎不增加滞后
+    max_scan_points: 360                 # 每帧最多用多少激光点（360 = 1°/点，足够且省 CPU）
+    log_period: 5.0                      # 位姿/质量日志打印周期(秒)
+
+    # ---------------- 代价地图清理 ----------------
+    # 局部代价地图是 3x3m 滚动窗口，会把“刚才走过的地方看到的障碍”留着；
+    # 被墙挡住的区域没有射线经过，永远清不掉，于是 RViz 里会看到擦不掉的一大块。
+    clear_costmaps_on_relocalize: True      # 收到 /initialpose 或粗搜索重定位后清空一次
+    clear_costmaps_when_still_sec: 3.0      # 静止(位姿变化<5cm/5°)超过 N 秒自动清空一次；0 = 关闭
+                                            # 3.0 = 停车 3 秒后把“行驶历史”留下的残留块清掉，
+                                            # 之后激光会把当前可见的障碍重新标回来
+    global_clear_service: /global_costmap/clear_entirely_global_costmap
+    local_clear_service: /local_costmap/clear_entirely_local_costmap

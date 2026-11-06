@@ -30,8 +30,10 @@ odom_cov_repub.py —— 给下位机的 /odom 补一套"可信度"协方差，�
   twist_fallback_variance                          速度协方差全 0 时的兜底值
 """
 import rclpy
+from rclpy.duration import Duration
 from rclpy.node import Node
 from rclpy.qos import qos_profile_sensor_data
+from rclpy.time import Time
 from nav_msgs.msg import Odometry
 
 # 6x6 协方差数组（行优先）里的对角索引：x, y, z, roll, pitch, yaw
@@ -48,6 +50,10 @@ class OdomCovRepub(Node):
 
         self.declare_parameter('input_topic', 'odom')
         self.declare_parameter('output_topic', 'odom_cov')
+        # 按本机接收时刻重打时间戳。下位机的 /odom 时间戳比上位机时钟旧（实测几十到
+        # 几百毫秒），EKF 会跟着用旧时间戳发布 odom->base_footprint，于是 tf2 到处
+        # 报“extrapolation / Transform data too old”。重打戳后整条 TF 都在同一时钟上。
+        self.declare_parameter('restamp', True)
         # 平移：小方差 = 高度信任
         self.declare_parameter('x_variance', 5.0e-4)   # m^2
         self.declare_parameter('y_variance', 5.0e-4)   # m^2
@@ -71,11 +77,14 @@ class OdomCovRepub(Node):
         self.twist_var_ = self.get_parameter('twist_fallback_variance').value
 
         self.logged_input_cov_ = False
+        self.restamp_ = self.get_parameter('restamp').value
+        self.last_stamp_ = None
 
         self.get_logger().info(
             f'odom_cov_repub: {in_topic} -> {out_topic}, '
             f'x_var={self.x_var_:.1e}, y_var={self.y_var_:.1e}, '
-            f'yaw_var={self.yaw_var_:.2f} rad^2 (越大越不信编码器航向)')
+            f'yaw_var={self.yaw_var_:.2f} rad^2 (越大越不信编码器航向), '
+            f'restamp={self.restamp_}')
 
         # 用 sensor_data QoS，与下位机发布 /odom 的 QoS 匹配
         self.pub = self.create_publisher(Odometry, out_topic, qos_profile_sensor_data)
@@ -91,9 +100,12 @@ class OdomCovRepub(Node):
         if not self.logged_input_cov_:
             self.logged_input_cov_ = True
             cov = msg.pose.covariance
+            age = (self.get_clock().now() -
+                   Time.from_msg(msg.header.stamp)).nanoseconds * 1e-9
             self.get_logger().info(
                 '收到下位机 /odom，原始 pose 协方差对角 '
                 f'[x={cov[POSE_X]:.3g}, y={cov[POSE_Y]:.3g}, yaw={cov[POSE_YAW]:.3g}]'
+                f'，时间戳比接收时刻旧 {age * 1000:.0f} ms'
                 f'{"  <- 全 0，EKF 原本等于无限信任它" if self._is_all_zero(cov) else ""}')
 
         # --- 位姿协方差：信平移、不信 yaw ---
@@ -109,6 +121,14 @@ class OdomCovRepub(Node):
         if self._is_all_zero(msg.twist.covariance):
             for i in TWIST_DIAG:
                 msg.twist.covariance[i] = self.twist_var_
+
+        # --- 时间戳：改成上位机接收时刻（保证单调递增） ---
+        if self.restamp_:
+            stamp = self.get_clock().now()
+            if self.last_stamp_ is not None and stamp <= self.last_stamp_:
+                stamp = self.last_stamp_ + Duration(nanoseconds=1)
+            self.last_stamp_ = stamp
+            msg.header.stamp = stamp.to_msg()
 
         self.pub.publish(msg)
 

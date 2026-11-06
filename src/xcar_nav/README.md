@@ -1,25 +1,25 @@
 # xcar_nav —— Nav2 自主导航包
 ros2 run nav2_map_server map_saver_cli -f ~/roscar_nav_last/src/xcar_nav/maps/square
 
-在**已保存的地图**上做自主导航：AMCL 定位 + 全局/局部路径规划 + 速度控制。
+在**已保存的地图**上做自主导航：纯激光地图匹配定位（`xcar_jiguang`，不用 AMCL）+ 全局/局部路径规划 + 速度控制。
 
 ## 1. 数据流与 TF 权责
 
 ```
-/scan ─┐
-       ├─→ AMCL ──→ TF: map -> odom          （定位，纠正累积误差）
-/odom ─┘                  ↑
-                          │ EKF（xcar_bringup）
-                     TF: odom -> base_footprint
-                          │ URDF（xcar_description）
-                     TF: base_footprint -> base_link -> 雷达/IMU
+/scan ──→ scan_repub ──→ /scan_ts ─┐
+                                   ├─→ lidar_loc ──→ TF: map -> odom   （定位，纠正累积误差）
+/odom ─┘                          ↑
+                                  │ EKF（xcar_bringup）
+                             TF: odom -> base_footprint
+                                  │ URDF（xcar_description）
+                             TF: base_footprint -> base_link -> 雷达/IMU
 
 Nav2（planner / controller / behaviors / bt_navigator）
    → /cmd_vel_nav → velocity_smoother → /cmd_vel → 下位机执行
 ```
 
 > ⚠️ **不要和 `slam_pkg` 的建图同时运行**：建图时 `map -> odom` 由 slam_toolbox 发布，
-> 导航时由 AMCL 发布，两个一起跑会互相抢发这段 TF。
+> 导航时由 `xcar_jiguang/lidar_loc` 发布，两个一起跑会互相抢发这段 TF。
 
 ## 2. 依赖
 
@@ -41,7 +41,7 @@ source install/setup.bash
 ros2 launch xcar_nav navigation.launch.py
 
 # 2) 在 RViz 里：
-#    - 用 "2D Pose Estimate" 点一下小车当前在地图上的位置和朝向（初始化 AMCL）
+#    - 用 "2D Pose Estimate" 点一下小车当前在地图上的位置和朝向（给 lidar_loc 一个初值）
 #    - 用 "2D Nav Goal"（Humble 里叫 "2D Goal Pose"）点目标点，小车就会自己过去
 ```
 
@@ -78,7 +78,8 @@ colcon build --packages-select xcar_nav
 
 | 现象 | 原因 / 处理 |
 |---|---|
-| AMCL 不动、粒子不收敛 | 忘了点 `2D Pose Estimate`，或初始朝向点反了 |
+| 定位不动 / 位姿乱跳 | 忘了点 `2D Pose Estimate`，或初值差太远；看 `lidar_loc` 日志里的“质量”是否 >0.9 |
+| 日志报“全局重定位存在歧义” | 地图近似对称，粗搜索选到了 180° 镜像解，手工点一次 2D Pose Estimate |
 | 车不动，但 RViz 里有路径 | 检查 `/cmd_vel` 有没有数据：`ros2 topic echo /cmd_vel`；再看下位机是否订阅同一话题名 |
 | 一直报 TF 超时 | 先确认 `map->odom->base_footprint` 三段都存在：`ros2 run tf2_tools view_frames` |
 | 规划失败 / 无路径 | 全局代价地图里起点被障碍物包住（膨胀半径太大），或地图里该区域是未知(灰色)，可把 `allow_unknown` 打开（默认已开） |

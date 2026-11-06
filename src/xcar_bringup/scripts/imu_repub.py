@@ -28,8 +28,10 @@ ROS2 Humble 的 rclpy 只对系统 Python 3.10 有效，如果环境里装了 co
   stationary_* / bias_*  零偏估计的阈值与时间常数
 """
 import rclpy
+from rclpy.duration import Duration
 from rclpy.node import Node
 from rclpy.qos import qos_profile_sensor_data
+from rclpy.time import Time
 from geometry_msgs.msg import Twist
 from sensor_msgs.msg import Imu
 
@@ -42,6 +44,11 @@ class ImuRepub(Node):
         self.declare_parameter('fill_zero_covariance', True)
         self.declare_parameter('orientation_variance', 0.001)      # rad^2
         self.declare_parameter('angular_velocity_variance', 0.01)  # (rad/s)^2
+        # 按本机接收时刻重打时间戳（下位机时钟比上位机旧，见 scan_repub.py 说明）
+        self.declare_parameter('restamp', True)
+        # 陀螺标度因子：实测原地转 360° 陀螺只积出 352.9°，故乘 1.02 校正。
+        # 模型：raw = true*scale + bias  →  true = (raw - bias) * gyro_scale
+        self.declare_parameter('gyro_scale', 1.02)
 
         # --- 陀螺零偏自动估计与扣除 ---
         self.declare_parameter('estimate_gyro_bias', True)
@@ -59,6 +66,10 @@ class ImuRepub(Node):
         self.fill_zero_ = self.get_parameter('fill_zero_covariance').value
         self.ori_var_ = self.get_parameter('orientation_variance').value
         self.ang_var_ = self.get_parameter('angular_velocity_variance').value
+        self.restamp_ = self.get_parameter('restamp').value
+        self.gyro_scale_ = self.get_parameter('gyro_scale').value
+        self.last_stamp_ = None
+        self.offset_sum_ = 0.0
 
         self.estimate_bias_ = self.get_parameter('estimate_gyro_bias').value
         self.stationary_vel_thr_ = \
@@ -83,7 +94,8 @@ class ImuRepub(Node):
         self.get_logger().info(
             f'imu_repub: /imu -> /imu_rotated, frame_id = {self.frame_id_}, '
             f'fill_zero_covariance = {self.fill_zero_}, '
-            f'estimate_gyro_bias = {self.estimate_bias_}')
+            f'estimate_gyro_bias = {self.estimate_bias_}, '
+            f'gyro_scale = {self.gyro_scale_}')
 
         # 使用 sensor_data QoS (BEST_EFFORT)，与下位机发布 IMU 的 QoS 匹配
         self.pub = self.create_publisher(Imu, 'imu_rotated', qos_profile_sensor_data)
@@ -105,11 +117,15 @@ class ImuRepub(Node):
 
     def callback(self, msg: Imu):
         msg.header.frame_id = self.frame_id_
+        now = self.get_clock().now()
+        self.offset_sum_ += (now - Time.from_msg(msg.header.stamp)).nanoseconds * 1e-9
 
         if self.estimate_bias_:
-            # 用原始值估计零偏，再把零偏扣掉
+            # 用原始值估计零偏，再扣零偏、乘标度因子
             self._update_gyro_bias(msg.angular_velocity.z)
-            msg.angular_velocity.z -= self.bias_
+            msg.angular_velocity.z = (msg.angular_velocity.z - self.bias_) * self.gyro_scale_
+        else:
+            msg.angular_velocity.z = msg.angular_velocity.z * self.gyro_scale_
 
         if self.fill_zero_:
             if self._is_all_zero(msg.orientation_covariance):
@@ -120,6 +136,13 @@ class ImuRepub(Node):
                 msg.angular_velocity_covariance[0] = self.ang_var_
                 msg.angular_velocity_covariance[4] = self.ang_var_
                 msg.angular_velocity_covariance[8] = self.ang_var_
+
+        if self.restamp_:
+            stamp = now
+            if self.last_stamp_ is not None and stamp <= self.last_stamp_:
+                stamp = self.last_stamp_ + Duration(nanoseconds=1)
+            self.last_stamp_ = stamp
+            msg.header.stamp = stamp.to_msg()
 
         self.pub.publish(msg)
 

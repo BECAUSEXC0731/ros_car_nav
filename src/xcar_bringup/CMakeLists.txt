@@ -31,6 +31,8 @@ install(DIRECTORY
 install(PROGRAMS
   scripts/imu_repub.py
   scripts/odom_cov_repub.py
+  scripts/scan_repub.py
+  scripts/scan_deskew.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
