@@ -5,9 +5,11 @@
 差别是：不用粒子滤波、不用里程计做预测，直接把每一帧激光和地图做匹配。
 
 ```
-/map  ──┐
-         ├─→ lidar_loc ──→ TF: map -> odom
-/scan_ts ┘        └──────→ /amcl_pose（位姿，RViz 显示用）
+/map       ──┐
+              ├─→ lidar_loc ──→ TF: map -> odom
+/scan_cloud ──┘         └──────→ /amcl_pose（位姿，RViz 显示用）
+  ↑
+  scan_deskew（去畸变点云，激光系；use_deskewed_scan:=false 时改订阅 /scan_ts）
 ```
 
 ---
@@ -44,16 +46,20 @@
 | 方向 | 名称 | 类型 | 说明 |
 |---|---|---|---|
 | 订阅 | `/map` | `nav_msgs/OccupancyGrid` | transient_local QoS，`map_server` 发布 |
-| 订阅 | `/scan_ts` | `sensor_msgs/LaserScan` | 用重打戳后的激光（`scan_repub`） |
+| 订阅 | `/scan_cloud` | `sensor_msgs/PointCloud2` | **默认**输入：`scan_deskew` 输出的去畸变点云（激光系） |
+| 订阅 | `/scan_ts` | `sensor_msgs/LaserScan` | 回退输入（`use_deskewed_scan: False`），由 `scan_repub` 重打戳 |
 | 订阅 | `/initialpose` | `PoseWithCovarianceStamped` | RViz 的 "2D Pose Estimate" |
 | 发布 | `/amcl_pose` | `PoseWithCovarianceStamped` | 当前位姿 |
 | 发布 | `/tf` | `map -> odom` | 定位结果 |
+| 调用 | `/local_costmap/clear_entirely_local_costmap`<br>`/global_costmap/clear_entirely_global_costmap` | `nav2_msgs/srv/ClearEntireCostmap` | 重定位/静止 3 s 后清空一次代价地图 |
 
 参数见 `config/lidar_loc.yaml`，最常调的：
 
 | 参数 | 默认 | 说明 |
 |---|---|---|
-| `scan_topic` | `scan_ts` | 换回原始激光就改 `scan` |
+| `use_deskewed_scan` | `True` | 用 `/scan_cloud` 匹配（移动/旋转时抖动更小）；`False` 回退 `/scan_ts` |
+| `scan_cloud_topic` | `scan_cloud` | 去畸变点云话题 |
+| `scan_topic` | `scan_ts` | 回退用的激光话题（换回原始数据就改 `scan`） |
 | `laser_frame` | `laser_frame` | 留空 `""` 则用 `scan.header.frame_id` |
 | `set_initial_pose` | `True` | 用 `initial_pose` 作初值；`False` 则等 RViz 点选 |
 | `initial_pose.{x,y,yaw}` | 0 | 车辆每次停放位置不同时，建议设 `False` 并手工点选 |
@@ -83,12 +89,16 @@ source install/setup.bash
 ros2 launch xcar_nav navigation.launch.py
 ```
 
+前置条件：`/map`（map_server）、`odom -> base_footprint` TF（EKF / odom2tf）、
+输入激光（默认 `/scan_cloud`，由 `xcar_bringup` 的 `scan_deskew` 发布）。
+
 只调试定位（自己起 map_server + RViz）：
 
 ```bash
-ros2 launch xcar_jiguang lidar_loc.launch.py
+ros2 launch xcar_jiguang lidar_loc.launch.py                 # 默认地图 maps/shiyan.yaml
 # 另开终端确认 TF：
 ros2 run tf2_ros tf2_echo map odom
+ros2 topic hz /scan_cloud        # 没数据时先看 scan_deskew 的 WARN 日志
 ```
 
 想让车在地图上"原地重定位"：RViz 里点 **2D Pose Estimate** → 发布 `/initialpose` →
